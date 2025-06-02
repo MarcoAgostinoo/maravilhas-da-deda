@@ -1,0 +1,151 @@
+/* Animações base - definem o estado inicial */
+.animate-initial {
+  opacity: 1;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition-property: transform, opacity;
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+/* Estado final - quando 'visible' é adicionado */
+.animate-initial.visible {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+/* Animações de Fade */
+.fade-in {
+  opacity: 0.9;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade com movimento para cima */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade com movimento para baixo */
+.fade-in-down {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.fade-in-down.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade com movimento lateral */
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.fade-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(20px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.fade-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Animações de escala */
+.scale-in {
+  opacity: 0.9;
+  transform: scale(0.95);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.scale-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Classes de delay */
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.delay-200 {
+  transition-delay: 200ms;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.delay-400 {
+  transition-delay: 400ms;
+}
+
+.delay-500 {
+  transition-delay: 500ms;
+}
+
+/* Classes de duração */
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.duration-700 {
+  transition-duration: 700ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+/* Remove a camada de utilidades duplicada */
+@layer utilities {
+  .animate-on-scroll {
+    opacity: 0.9;
+    transition:
+      opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

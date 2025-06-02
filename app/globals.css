@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+@import "./styles/animations.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Estilo para o bullet de paginação ativo do Swiper */
+.swiper-pagination-custom .swiper-pagination-bullet-active {
+  @apply scale-125 bg-blue-500;
+}
+
+/* Ajuste de posicionamento dos textos em telas grandes durante a rolagem */
+@media (min-width: 1024px) {
+  .scroll-text-adjust {
+    transform: translateY(-6px);
+    transition: transform 0.3s ease;
+  }
+}
+
+/* Ajuste de posicionamento dos textos em telas normais */
+.text-normal-adjust {
+  transform: translateY(-4px);
+  transition: transform 0.3s ease;
+}
+
+/* Animações de entrada para o texto do slide */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideInUp {
+  animation: slideInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+/* Utilitários de delay para animação */
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.animation-delay-600 {
+  animation-delay: 0.6s;
+}
+
+/* Efeitos de hover */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Efeitos de transição suave */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Efeitos de sombra */
+.hover-shadow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos personalizados para a paginação do Swiper */
+.swiper-pagination-custom {
+  @apply h-3 w-3 rounded-full bg-gray-600 opacity-70 transition-all duration-300 md:h-4 md:w-4;
+  margin: 0 5px !important;
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet-active {
+  @apply scale-125 bg-blue-500 opacity-100;
+}
+
+.swiper-pagination-bullet {
+  background-color: #4b5563;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f97316;
+}

@@ -1,0 +1,48 @@
+{
+  "name": "flowbite-react-template-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "postinstall": "flowbite-react patch"
+  },
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@headlessui/react": "^2.2.4",
+    "@heroicons/react": "^2.2.0",
+    "animate.css": "^4.1.1",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
+    "flowbite-react": "^0.11.7",
+    "framer-motion": "^12.14.0",
+    "next": "^15.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
+    "react-intersection-observer": "^9.16.0",
+    "swiper": "^11.2.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@tailwindcss/postcss": "^4.1.7",
+    "@types/node": "^20.17.30",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "autoprefixer": "^10.4.17",
+    "critters": "^0.0.20",
+    "cssnano": "^7.0.7",
+    "eslint": "^9.24.0",
+    "eslint-config-next": "^15.3.0",
+    "postcss": "^8.4.35",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^4.1.7",
+    "typescript": "^5.8.3"
+  }
+}
