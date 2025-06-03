@@ -2,10 +2,11 @@
 "use client";
 
 import BannerPages from "@/app/components/bannerPages/BannerPages";
-import HeroServices from "@/app/components/services/heroServices/HeroServices";
+// Remove or use HeroServices
+// import HeroServices from "@/app/components/services/heroServices/HeroServices";
 import ServicesList from "@/app/components/services/servicesList/ServicesList";
 import ServicesOverview from "@/app/components/services/servicesOverview/ServicesOverview";
-import { FaWrench, FaShieldAlt, FaTools, FaCarSide } from "react-icons/fa"; // Ícones relevantes
+import { FaWrench, FaShieldAlt, FaTools } from "react-icons/fa"; // Remove FaCarSide if not used
 
 const services = [
   {
