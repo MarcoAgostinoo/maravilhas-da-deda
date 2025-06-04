@@ -10,9 +10,10 @@ import {
   FaPhoneAlt,
   FaMapMarkerAlt,
   FaClock,
-  FaLinkedin,
-  FaTwitter,
+  // FaLinkedin,
+  // FaTwitter,
   FaInstagram,
+  FaFacebookF,
   FaCheckCircle,
   FaPaperPlane,
   FaTimes,
@@ -223,10 +224,10 @@ const ContactPage = () => {
                     Email
                   </p>
                   <a
-                    href="mailto:contato@suaempresa.com"
+                    href="mailto:mario.fanucchi@hotmail.com"
                     className="text-gray-600 hover:underline dark:text-gray-400"
                   >
-                    contato@suaempresa.com
+                    mario.fanucchi@hotmail.com
                   </a>
                 </div>
               </div>
@@ -240,7 +241,7 @@ const ContactPage = () => {
                     href="tel:+5511997032814"
                     className="text-gray-600 hover:underline dark:text-gray-400"
                   >
-                    +55 (11) 99703-28149
+                    +55 (11) 99703-2814
                   </a>
                 </div>
               </div>
@@ -251,8 +252,8 @@ const ContactPage = () => {
                     Endereço
                   </p>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Rua Digital, 123 - Centro <br />
-                    São Paulo - SP, 11 99703-2814
+                    Rua Fonseca Galvão, nº 55 <br /> Vila Mariana <br />
+                    São Paulo - SP
                   </p>
                 </div>
               </div>
@@ -263,7 +264,7 @@ const ContactPage = () => {
                     Horário de Funcionamento
                   </p>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Seg - Sex: 9:00 - 18:00
+                    Seg - Sex: 8:00 - 17  :00
                   </p>
                 </div>
               </div>
@@ -275,17 +276,17 @@ const ContactPage = () => {
             </h3>
             <div className="flex space-x-4">
               <motion.a
-                href="https://linkedin.com/company/suaempresa"
+                href="https://www.facebook.com/mario.fanucchi.1"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, color: "#0A66C2" }}
                 whileTap={{ scale: 0.9 }}
                 className="text-gray-600 hover:text-orange-500 dark:text-gray-400 dark:hover:text-orange-400"
-                aria-label="LinkedIn"
+                aria-label="Facebook"
               >
-                <FaLinkedin className="h-8 w-8" />
+                <FaFacebookF className="h-8 w-8" />
               </motion.a>
-              <motion.a
+              {/* <motion.a
                 href="https://twitter.com/suaempresa"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -295,7 +296,7 @@ const ContactPage = () => {
                 aria-label="Twitter"
               >
                 <FaTwitter className="h-8 w-8" />
-              </motion.a>
+              </motion.a> */}
               <motion.a
                 href="https://instagram.com/suaempresa"
                 target="_blank"
@@ -471,7 +472,7 @@ const ContactPage = () => {
           </h2>
           <div className="relative h-96 overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.4815234567897!2d-46.65706568449646!3d-23.55051916602336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a16f9a65d5%3A0x7d2f9b2d8c3e8a4d!2sAv.%20Paulista%2C%201578%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-200!5e0!3m2!1spt-BR!2sbr!4v1678987654321!5m2!1spt-BR!2sbr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.6770125080498!2d-46.62362282542125!3d-23.580040962277316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5962e9d22e95%3A0x5730ab03f301ac54!2sR.%20Fonseca%20Galv%C3%A3o%2C%2055%20-%20Jardim%20da%20Gloria%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001547-130!5e0!3m2!1spt-BR!2sbr!4v1749025510793!5m2!1spt-BR!2sbr"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -500,26 +501,23 @@ const ContactPage = () => {
                 Qual o tempo de resposta do contato?
               </summary>
               <p className="mt-2 text-gray-700 dark:text-gray-300">
-                Geralmente, respondemos em até 24 horas úteis. Para assuntos
-                urgentes, ligue para nosso telefone.
+                Aqui na Garagem Oficina, prezamos por um contato ágil e direto com o Mario. Nosso objetivo é responder sua mensagem em até 24 horas úteis. Para assuntos mais urgentes ou se preferir uma conversa rápida, sinta-se à vontade para ligar ou nos chamar no WhatsApp. Sua dúvida é importante para nós!
               </p>
             </details>
             <details className="animate-on-scroll fade-in-up bg-gray-100 p-4 delay-200 dark:bg-gray-700">
               <summary className="cursor-pointer font-semibold text-gray-900 dark:text-white">
-                Vocês oferecem consultoria gratuita?
+                A Garagem Oficina oferece uma avaliação inicial gratuita?
               </summary>
               <p className="mt-2 text-gray-700 dark:text-gray-300">
-                Sim, oferecemos uma consultoria inicial sem custo para entender
-                suas necessidades e propor as melhores soluções.
+                Com certeza! O Mario Fanucchi acredita que o primeiro passo é entender bem o que seu carro precisa. Por isso, oferecemos uma conversa inicial sem custo para avaliarmos suas necessidades e discutirmos as melhores e mais honestas soluções para o seu veículo, sempre com a transparência que é a marca da Garagem Oficina.
               </p>
             </details>
             <details className="animate-on-scroll fade-in-up bg-gray-100 p-4 delay-300 dark:bg-gray-700">
               <summary className="cursor-pointer font-semibold text-gray-900 dark:text-white">
-                Posso agendar uma reunião presencial?
+                Posso agendar uma visita ou serviço presencial com o Mario?
               </summary>
               <p className="mt-2 text-gray-700 dark:text-gray-300">
-                Atendemos presencialmente com agendamento prévio. Entre em
-                contato para verificar a disponibilidade.
+                Claro! O Mario Fanucchi terá prazer em recebê-lo na Garagem Oficina. Para garantir que ele possa dedicar atenção total ao seu carro e às suas dúvidas, nosso atendimento presencial é feito com agendamento prévio. Entre em contato para verificarmos o melhor horário para você!
               </p>
             </details>
           </div>

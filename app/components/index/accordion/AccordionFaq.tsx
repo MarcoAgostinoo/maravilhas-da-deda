@@ -92,7 +92,7 @@ export function AccordionFaq() {
               É simples agendar com a Garagem Oficina! Você pode:
             </p>
             <p className="mb-2 text-gray-800 dark:text-gray-300">
-              Ligar: (11) 1234-5678
+              Ligar: (11) 99703-2814
             </p>
             <p className="mb-2 text-gray-800 dark:text-gray-300">
               Mandar mensagem no WhatsApp: (11) 98765-4321

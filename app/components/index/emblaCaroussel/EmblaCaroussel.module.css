@@ -27,6 +27,32 @@
   background: white;
 }
 
+.embla__button {
+  background-color: white;
+  color: rgb(30, 58, 138);
+}
+
+@media (prefers-color-scheme: dark) {
+  .embla__viewport {
+    background: rgb(31, 41, 55);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .embla__button {
+    background-color: rgb(31, 41, 55);
+    color: rgb(147, 197, 253);
+  }
+
+  .embla__dot:after {
+    background: rgb(75, 85, 99);
+  }
+
+  .embla__dot--selected:after {
+    background: rgb(147, 197, 253);
+    box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.3);
+  }
+}
+
 .embla__container {
   display: flex;
   touch-action: pan-y pinch-zoom;

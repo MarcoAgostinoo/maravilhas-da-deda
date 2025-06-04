@@ -60,7 +60,7 @@ const allRepairCases: RepairCase[] = [
     id: "3",
     name: "Restauração de Potência e Economia - Fiat Argo",
     category: ["Motor", "Injeção Eletrônica"],
-    image: "/casos/injecao-argo.jpg",
+    image: "/portifolio/fiatargo.jpg",
     description: "Carro 'engasgando' e alto consumo? Injeção eletrônica impecável.",
     fullDescription:
       "Um Fiat Argo chegou à Garagem Oficina com perda de potência perceptível, consumo elevado de combustível e luz da injeção acesa. Mario utilizou o scanner automotivo de última geração para um diagnóstico preciso: bicos injetores sujos e falha em um sensor de oxigênio. Após a limpeza ultrassônica dos bicos, substituição do sensor e um ajuste fino no módulo, o Argo recuperou sua performance e economia de fábrica.",
@@ -75,7 +75,7 @@ const allRepairCases: RepairCase[] = [
     id: "4",
     name: "Resfriamento Eficiente em Dias Quentes - VW Gol",
     category: ["Motor", "Arrefecimento"],
-    image: "/casos/arrefecimento-gol.jpg",
+    image: "/portifolio/gol.jpg",
     description: "Motor superaquecendo no trânsito das Marginais? Resolvemos para você.",
     fullDescription:
       "Um clássico VW Gol estava superaquecendo constantemente no trânsito intenso de São Paulo. Mario Fanucchi investigou e encontrou uma válvula termostática travada e radiador parcialmente obstruído. O sistema de arrefecimento foi limpo, a válvula substituída e o aditivo adequado foi aplicado. Agora, o Gol mantém a temperatura ideal mesmo nos dias mais quentes e no trânsito mais parado.",
@@ -90,7 +90,7 @@ const allRepairCases: RepairCase[] = [
     id: "5",
     name: "Preparação de Veículo para Aplicativos - Renault Kwid",
     category: ["Revisão Geral", "Prevenção"],
-    image: "/casos/checkup-kwid.jpg",
+    image: "/portifolio/Kwid.jpg",
     description: "Motorista de app precisa de confiabilidade. Garantimos seu ganha-pão.",
     fullDescription:
       "Um motorista de aplicativo trouxe seu Renault Kwid para uma revisão completa, visando a máxima confiabilidade para o trabalho diário. Mario Fanucchi realizou um check-up preventivo rigoroso, incluindo troca de óleo e filtros, verificação de correias, velas, sistema de freios, suspensão e pneus. Todos os itens de desgaste rápido foram inspecionados e substituídos quando necessário, garantindo que o Kwid estivesse 100% pronto para rodar sem preocupações.",
@@ -105,7 +105,7 @@ const allRepairCases: RepairCase[] = [
     id: "6",
     name: "Solução de Problemas Elétricos Complexos - Fiat Palio",
     category: ["Elétrica", "Diagnóstico"],
-    image: "/casos/eletrica-palio.jpg",
+    image: "/portifolio/palio6.jpg",
     description: "Luzes no painel, bateria arriando... Encontramos a raiz do problema.",
     fullDescription:
       "Um Fiat Palio apresentava uma série de problemas elétricos intermitentes, como luzes no painel acendendo sem motivo e bateria descarregando. Mario Fanucchi, com seu conhecimento em elétrica automotiva, rastreou a falha até um chicote elétrico com oxidação e um sensor com leitura errada. Realizou o reparo do chicote, substituiu o sensor e testou todos os sistemas, devolvendo a estabilidade elétrica e a confiança ao proprietário do Palio.",
@@ -355,7 +355,7 @@ const PortfolioPage = () => {
             Confie na experiência e precisão de Mario Fanucchi. Entre em contato e agende o serviço que seu veículo precisa.
           </p>
           <motion.a
-            href="/contato" // Altere para sua página de contato
+            href="/p/contato"
             title="Agende um serviço com a Garagem Oficina"
             className="inline-flex items-center bg-blue-900 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:bg-blue-900 dark:hover:bg-blue-800 dark:focus:ring-blue-800"
             whileHover={{ scale: 1.05 }}

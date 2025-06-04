@@ -11,8 +11,8 @@ import { usePathname } from "next/navigation"; // <-- Importe usePathname
 import {
   FaInstagram,
   FaFacebook,
-  FaTwitter,
-  FaLinkedin,
+  // FaTwitter,
+  // FaLinkedin,
   FaWhatsapp,
 } from "react-icons/fa";
 import { useTheme } from "@/app/hooks/useTheme";
@@ -50,33 +50,33 @@ export function NavBar() {
             </p>
             <div className="mt-3 ml-4 flex gap-4">
               <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/mario.fanucchi.1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
                 target="_blank"
                 className="text-white transition-all hover:scale-110 hover:text-gray-200 hover:shadow-lg dark:text-gray-100"
               >
                 <FaInstagram size={22} />
               </Link>
               <Link
-                href="https://facebook.com"
+                href="https://www.facebook.com/mario.fanucchi.1"
                 target="_blank"
                 className="text-white transition-all hover:scale-110 hover:text-gray-200 hover:shadow-lg dark:text-gray-100"
               >
                 <FaFacebook size={22} />
               </Link>
-              <Link
+              {/* <Link
                 href="https://linkedin.com"
                 target="_blank"
                 className="text-white transition-all hover:scale-110 hover:text-gray-200 hover:shadow-lg dark:text-gray-100"
               >
                 <FaLinkedin size={22} />
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 href="https://FaTwitter.com"
                 target="_blank"
                 className="text-white transition-all hover:scale-110 hover:text-gray-200 hover:shadow-lg dark:text-gray-100"
               >
                 <FaTwitter size={22} />
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -133,7 +133,7 @@ export function NavBar() {
             {/* Sign In Button - Desktop */}
             <div className="hidden md:block">
               <Link
-                href="https://wa.me/5511933891700?text=Olá! Gostaria de saber mais sobre os serviços da Kisite"
+                href="https://wa.me/5511997032814?text=Olá! Gostaria de saber mais sobre os serviços da Kisite"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-[#25D366] px-6 py-3 text-white shadow-lg transition-transform duration-300 hover:scale-105 hover:bg-[#1EBE57]"
@@ -214,7 +214,7 @@ export function NavBar() {
               <div className="pt-2 lg:hidden">
                 <div className="md:block">
                   <Link
-                    href="https://wa.me/5511933891700?text=Olá! Gostaria de saber mais sobre os serviços da Kisite"
+                    href="https://wa.me/5511997032814?text=Olá! Gostaria de saber mais sobre os serviços da Kisite"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 bg-[#25D366] px-6 py-3 text-white shadow-lg transition-transform duration-300 hover:scale-105 hover:bg-[#1EBE57]"

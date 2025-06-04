@@ -8,7 +8,7 @@ import {
   FaWhatsapp,
   FaFacebookF,
   FaInstagram,
-  FaLinkedinIn,
+  // FaLinkedinIn,
 } from "react-icons/fa";
 
 export function FooTer() {
@@ -47,26 +47,26 @@ export function FooTer() {
               <FaWhatsapp className="h-5 w-5" />
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/mario.fanucchi.1"
               className="text-white transition-colors hover:text-orange-400 dark:hover:text-orange-500"
               aria-label="Facebook"
             >
               <FaFacebookF className="h-5 w-5" />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/mario.fanucchi.1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
               className="text-white transition-colors hover:text-orange-400 dark:hover:text-orange-500"
               aria-label="Instagram"
             >
               <FaInstagram className="h-5 w-5" />
             </a>
-            <a
+            {/* <a
               href="#"
               className="text-white transition-colors hover:text-orange-400 dark:hover:text-orange-500"
               aria-label="LinkedIn"
             >
               <FaLinkedinIn className="h-5 w-5" />
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -87,7 +87,7 @@ export function FooTer() {
           <h4 className="mb-4 text-lg font-semibold tracking-wide uppercase">Links Rápidos</h4>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/p/sbre" className="transition-colors hover:text-orange-400 dark:hover:text-orange-500">
+              <Link href="/p/sobre" className="transition-colors hover:text-orange-400 dark:hover:text-orange-500">
                 Sobre Nós
               </Link>
             </li>
@@ -118,7 +118,7 @@ export function FooTer() {
           </div>
           <div className="flex items-center text-sm">
             <FaPhoneAlt className="mr-2 h-4 w-4 text-orange-400 dark:text-orange-500" />
-            <span className="text-gray-300 dark:text-gray-400">(11) 9 5451-0976</span>
+            <span className="text-gray-300 dark:text-gray-400">(11) 99703-2814</span>
           </div>
           <div className="flex items-center text-sm">
             <FaEnvelope className="mr-2 h-4 w-4 text-orange-400 dark:text-orange-500" />

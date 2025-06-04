@@ -20,6 +20,11 @@ type PropType = {
 
 const slideContent = [
   {
+    title: "Eliminação de Barulhos na Suspensão - Hyundai HB20",
+    description: "Um Hyundai HB20, carro popular nas ruas de São Paulo, chegou com barulhos incômodos e direção imprecisa. Mario Fanucchi, com seu olhar apurado e experiência, diagnosticou rapidamente buchas da bandeja e pivôs desgastados, resultado do uso diário em pavimentos irregulares. Após a substituição por peças de qualidade e um alinhamento 3D preciso, o cliente saiu com o HB20 rodando suavemente e silenciosamente, como novo.",
+    url: "/portifolio/port_hb20.png",
+  },
+  {
     title: "Freios",
     description:
       "Freios revisados garantem sua segurança em qualquer situação.",

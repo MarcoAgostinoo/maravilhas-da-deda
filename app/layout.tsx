@@ -9,9 +9,9 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "KiSite - Soluções Web",
+  title: "Garagem Oficina",
   description:
-    "Template moderno e otimizado desenvolvido com Next.js e Flowbite React",
+    "A Garagem Oficina realiza serviços automotivos de alta qualidade, desde manutenções preventivas até reparos complexos, garantindo segurança e desempenho do seu veículo. Agende sua visita.",
 };
 
 export default function RootLayout({
