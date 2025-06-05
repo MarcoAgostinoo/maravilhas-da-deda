@@ -21,50 +21,38 @@ type PropType = {
 const slideContent = [
   {
     title: "Eliminação de Barulhos na Suspensão - Hyundai HB20",
-    description: "Um Hyundai HB20, carro popular nas ruas de São Paulo, chegou com barulhos incômodos e direção imprecisa. Mario Fanucchi, com seu olhar apurado e experiência, diagnosticou rapidamente buchas da bandeja e pivôs desgastados, resultado do uso diário em pavimentos irregulares. Após a substituição por peças de qualidade e um alinhamento 3D preciso, o cliente saiu com o HB20 rodando suavemente e silenciosamente, como novo.",
-    url: "/portifolio/port_hb20.png",
+    description: "Fim dos 'toc-toc' ao passar em buracos e valetas de São Paulo.",
+    url: "/p/servicos",
   },
   {
-    title: "Freios",
-    description:
-      "Freios revisados garantem sua segurança em qualquer situação.",
-    url: "/servicos/freios",
+    title: "Freios com Segurança Total no Trânsito - Chevrolet Onix",
+    description: "Chiado e pedal duro no anda-e-para da cidade? Solução garantida.",
+    url: "/portifolio/port_onix.webp",
   },
   {
-    title: "Motor",
-    description:
-      "Manter o motor em dia é essencial para desempenho e economia.",
-    url: "/servicos/motor",
+    title: "Restauração de Potência e Economia - Fiat Argo",
+    description: "Carro 'engasgando' e alto consumo? Injeção eletrônica impecável.",
+    url: "/p/servicos",
   },
   {
-    title: "Suspensão",
-    description:
-      "Uma suspensão bem cuidada oferece mais conforto e estabilidade na direção.",
-    url: "/servicos/suspensao",
+    title: "Resfriamento Eficiente em Dias Quentes - VW Gol",
+    description: "Motor superaquecendo no trânsito das Marginais? Resolvemos para você.",
+    url: "/p/servicos",
   },
   {
-    title: "Sistema de Arrefecimento",
-    description:
-      "Evite superaquecimentos — cuide do sistema de arrefecimento do seu carro.",
-    url: "/servicos/arrefecimento",
+    title: "Preparação de Veículo para Aplicativos - Renault Kwid",
+    description: "Motorista de app precisa de confiabilidade. Garantimos seu ganha-pão.",
+    url: "/p/servicos",
   },
   {
-    title: "Embreagem e Transmissão",
-    description:
-      "Câmbio e embreagem ajustados garantem trocas suaves e sem desgaste prematuro.",
-    url: "/servicos/embreagem",
+    title: "Solução de Problemas Elétricos Complexos - Fiat Palio",
+    description: "Luzes no painel, bateria arriando... Encontramos a raiz do problema.",
+    url: "/p/servicos",
   },
   {
-    title: "Sistema Elétrico",
-    description:
-      "Bateria, alternador e parte elétrica revisados evitam panes inesperadas.",
-    url: "/servicos/eletrico",
-  },
-  {
-    title: "Escapamento",
-    description:
-      "Escapamento em boas condições reduz poluentes e melhora o desempenho.",
-    url: "/servicos/escapamento",
+    title: "Reparo de Câmbio Automático com Trancos e Patinação - Honda Fit (São Paulo)",
+    description: "Câmbio automático dando trancos, patinando ou com retenção de marchas em SP? Especialista em conserto e troca de fluido de transmissão automática.",
+    url: "/p/servicos",
   },
 ];
 
@@ -153,7 +141,7 @@ const EmblaCarousel: React.FC<PropType> = ({
                 >
                   <div className={`${styles.embla__slide__number}`}>
                     <Image
-                      src={`/caroucelEmbla${index + 1}.jpg`}
+                      src={`/index/caroucelEmbla${index + 1}.jpg`}
                       alt={`Projeto ${index + 1}`}
                       className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
                       loading="lazy"

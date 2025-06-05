@@ -39,88 +39,88 @@ export default function Home() {
         autoplayInterval={5000}
       />
       <ServicesOverview
-  title="Mais Alguns de Nossos Serviços"
-  description="Excelência e dedicação em cada detalhe para manter seu carro sempre em perfeitas condições."
-  features={[
-    {
-      icon: (
-        <FaMicrochip className="h-8 w-8 text-blue-600 dark:text-blue-400" />
-      ),
-      title: "Diagnóstico Computadorizado",
-      description:
-        "Identificação precisa de falhas eletrônicas e sistemas de injeção.",
-      details: (
-        <>
-          <p className="mb-2 text-sm text-gray-700 dark:text-gray-300">
-            Utilizamos scanner automotivo e tecnologia avançada para encontrar
-            qualquer problema antes que ele se agrave.
-          </p>
-          <ul className="list-inside list-disc text-sm text-gray-600 dark:text-gray-400">
-            <li>Leitura de códigos de falha (ABS, injeção, sensores)</li>
-            <li>Análise de luzes de advertência no painel</li>
-            <li>Verificação de sensores e atuadores</li>
-            <li>Relatório detalhado com orientações transparentes</li>
-          </ul>
-        </>
-      ),
-      callToActionText: "Agendar Diagnóstico",
-      callToActionLink: "/servicos/diagnostico",
-    },
-    {
-      icon: (
-        <FaCarSide className="h-8 w-8 text-green-600 dark:text-green-400" />
-      ),
-      title: "Serviços de Ar Condicionado",
-      description:
-        "Conforto térmico garantido para enfrentar o trânsito e o calor de São Paulo.",
-      details: (
-        <>
-          <p className="mb-2 text-sm text-gray-700 dark:text-gray-300">
-            Fazemos manutenção completa do sistema de ar condicionado,
-            garantindo desempenho, eliminação de odores e economia de combustível.
-          </p>
-          <ul className="list-inside list-disc text-sm text-gray-600 dark:text-gray-400">
-            <li>Higienização do sistema de ventilação</li>
-            <li>Recarga de gás refrigerante</li>
-            <li>Verificação de compressor e válvulas</li>
-            <li>Troca de filtro de cabine (antipólen)</li>
-          </ul>
-        </>
-      ),
-      callToActionText: "Ver Serviços de Ar Condicionado",
-      callToActionLink: "/servicos/ar-condicionado",
-    },
-    {
-      icon: (
-        <FaWrench className="h-8 w-8 text-purple-600 dark:text-purple-400" />
-      ),
-      title: "Manutenção Geral e Injeção",
-      description:
-        "Cuidado completo para o coração do seu veículo, do motor à elétrica.",
-      details: (
-        <>
-          <p className="mb-2 text-sm text-gray-700 dark:text-gray-300">
-            Do óleo ao sistema eletrônico, cuidamos de tudo para que seu
-            carro funcione sempre como novo.
-          </p>
-          <ul className="list-inside list-disc text-sm text-gray-600 dark:text-gray-400">
-            <li>Troca de óleo e filtros (motor, ar, combustível)</li>
-            <li>Limpeza e reparo de bicos injetores e sensores</li>
-            <li>Verificação de sistema de arrefecimento e escapamento</li>
-            <li>Check-list completo de componentes elétricos básicos</li>
-          </ul>
-        </>
-      ),
-      callToActionText: "Conhecer Manutenção",
-      callToActionLink: "/servicos/manutencao",
-    },
-  ]}
-  showGlobalCTA={true}
-  globalCTATitle="Pronto para dar cuidado profissional ao seu veículo?"
-  globalCTADescription="Com mais de 20 anos de experiência, Mario Fanucchi garante diagnóstico honesto, reparos de qualidade e atendimento personalizado."
-  globalCTAText="Agende Agora"
-  globalCTALink="/contato"
-/>
+        title="Mais Alguns de Nossos Serviços"
+        description="Excelência e dedicação em cada detalhe para manter seu carro sempre em perfeitas condições."
+        features={[
+          {
+            icon: (
+              <FaMicrochip className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+            ),
+            title: "Diagnóstico Computadorizado",
+            description:
+              "Identificação precisa de falhas eletrônicas e sistemas de injeção.",
+            details: (
+              <>
+                <p className="mb-2 text-sm text-gray-700 dark:text-gray-300">
+                  Utilizamos scanner automotivo e tecnologia avançada para encontrar
+                  qualquer problema antes que ele se agrave.
+                </p>
+                <ul className="list-inside list-disc text-sm text-gray-600 dark:text-gray-400">
+                  <li>Leitura de códigos de falha (ABS, injeção, sensores)</li>
+                  <li>Análise de luzes de advertência no painel</li>
+                  <li>Verificação de sensores e atuadores</li>
+                  <li>Relatório detalhado com orientações transparentes</li>
+                </ul>
+              </>
+            ),
+            callToActionText: "Agendar Diagnóstico",
+            callToActionLink: "/servicos/diagnostico",
+          },
+          {
+            icon: (
+              <FaCarSide className="h-8 w-8 text-green-600 dark:text-green-400" />
+            ),
+            title: "Serviços de Ar Condicionado",
+            description:
+              "Conforto térmico garantido para enfrentar o trânsito e o calor de São Paulo.",
+            details: (
+              <>
+                <p className="mb-2 text-sm text-gray-700 dark:text-gray-300">
+                  Fazemos manutenção completa do sistema de ar condicionado,
+                  garantindo desempenho, eliminação de odores e economia de combustível.
+                </p>
+                <ul className="list-inside list-disc text-sm text-gray-600 dark:text-gray-400">
+                  <li>Higienização do sistema de ventilação</li>
+                  <li>Recarga de gás refrigerante</li>
+                  <li>Verificação de compressor e válvulas</li>
+                  <li>Troca de filtro de cabine (antipólen)</li>
+                </ul>
+              </>
+            ),
+            callToActionText: "Ver Serviços de Ar Condicionado",
+            callToActionLink: "/servicos/ar-condicionado",
+          },
+          {
+            icon: (
+              <FaWrench className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+            ),
+            title: "Manutenção Geral e Injeção",
+            description:
+              "Cuidado completo para o coração do seu veículo, do motor à elétrica.",
+            details: (
+              <>
+                <p className="mb-2 text-sm text-gray-700 dark:text-gray-300">
+                  Do óleo ao sistema eletrônico, cuidamos de tudo para que seu
+                  carro funcione sempre como novo.
+                </p>
+                <ul className="list-inside list-disc text-sm text-gray-600 dark:text-gray-400">
+                  <li>Troca de óleo e filtros (motor, ar, combustível)</li>
+                  <li>Limpeza e reparo de bicos injetores e sensores</li>
+                  <li>Verificação de sistema de arrefecimento e escapamento</li>
+                  <li>Check-list completo de componentes elétricos básicos</li>
+                </ul>
+              </>
+            ),
+            callToActionText: "Conhecer Manutenção",
+            callToActionLink: "/servicos/manutencao",
+          },
+        ]}
+        showGlobalCTA={true}
+        globalCTATitle="Pronto para dar cuidado profissional ao seu veículo?"
+        globalCTADescription="Com mais de 20 anos de experiência, Mario Fanucchi garante diagnóstico honesto, reparos de qualidade e atendimento personalizado."
+        globalCTAText="Agende Agora"
+        globalCTALink="/contato"
+      />
       <AccordionFaq />
     </main>
   );

@@ -30,7 +30,7 @@ const allRepairCases: RepairCase[] = [
     id: "1",
     name: "Eliminação de Barulhos na Suspensão - Hyundai HB20",
     category: ["Suspensão", "Conforto"],
-    image: "/portifolio/port_hb20.png",
+    image: "/portifolio/portifilio1.png",
     description: "Fim dos 'toc-toc' ao passar em buracos e valetas de São Paulo.",
     fullDescription:
       "Um Hyundai HB20, carro popular nas ruas de São Paulo, chegou com barulhos incômodos e direção imprecisa. Mario Fanucchi, com seu olhar apurado e experiência, diagnosticou rapidamente buchas da bandeja e pivôs desgastados, resultado do uso diário em pavimentos irregulares. Após a substituição por peças de qualidade e um alinhamento 3D preciso, o cliente saiu com o HB20 rodando suavemente e silenciosamente, como novo.",
@@ -45,7 +45,7 @@ const allRepairCases: RepairCase[] = [
     id: "2",
     name: "Freios com Segurança Total no Trânsito - Chevrolet Onix",
     category: ["Freios", "Segurança"],
-    image: "/portifolio/port_onix.webp",
+    image: "/portifolio/portifilio2.webp",
     description: "Chiado e pedal duro no anda-e-para da cidade? Solução garantida.",
     fullDescription:
       "Um Chevrolet Onix, campeão de vendas, apresentava chiados fortes ao frear e um pedal duro, especialmente no trânsito pesado de São Paulo. Mario Fanucchi inspecionou o sistema e identificou discos e pastilhas desgastados além do limite. A troca foi feita por componentes de alta performance, e o sistema foi sangrado cuidadosamente, restaurando a capacidade de frenagem total e a segurança para o dia a dia do motorista.",
@@ -60,7 +60,7 @@ const allRepairCases: RepairCase[] = [
     id: "3",
     name: "Restauração de Potência e Economia - Fiat Argo",
     category: ["Motor", "Injeção Eletrônica"],
-    image: "/portifolio/fiatargo.jpg",
+    image: "/portifolio/portifilio3.jpg",
     description: "Carro 'engasgando' e alto consumo? Injeção eletrônica impecável.",
     fullDescription:
       "Um Fiat Argo chegou à Garagem Oficina com perda de potência perceptível, consumo elevado de combustível e luz da injeção acesa. Mario utilizou o scanner automotivo de última geração para um diagnóstico preciso: bicos injetores sujos e falha em um sensor de oxigênio. Após a limpeza ultrassônica dos bicos, substituição do sensor e um ajuste fino no módulo, o Argo recuperou sua performance e economia de fábrica.",
@@ -75,7 +75,7 @@ const allRepairCases: RepairCase[] = [
     id: "4",
     name: "Resfriamento Eficiente em Dias Quentes - VW Gol",
     category: ["Motor", "Arrefecimento"],
-    image: "/portifolio/gol.jpg",
+    image: "/portifolio/portifilio4.jpg",
     description: "Motor superaquecendo no trânsito das Marginais? Resolvemos para você.",
     fullDescription:
       "Um clássico VW Gol estava superaquecendo constantemente no trânsito intenso de São Paulo. Mario Fanucchi investigou e encontrou uma válvula termostática travada e radiador parcialmente obstruído. O sistema de arrefecimento foi limpo, a válvula substituída e o aditivo adequado foi aplicado. Agora, o Gol mantém a temperatura ideal mesmo nos dias mais quentes e no trânsito mais parado.",
@@ -90,7 +90,7 @@ const allRepairCases: RepairCase[] = [
     id: "5",
     name: "Preparação de Veículo para Aplicativos - Renault Kwid",
     category: ["Revisão Geral", "Prevenção"],
-    image: "/portifolio/Kwid.jpg",
+    image: "/portifolio/portifilio5.jpg",
     description: "Motorista de app precisa de confiabilidade. Garantimos seu ganha-pão.",
     fullDescription:
       "Um motorista de aplicativo trouxe seu Renault Kwid para uma revisão completa, visando a máxima confiabilidade para o trabalho diário. Mario Fanucchi realizou um check-up preventivo rigoroso, incluindo troca de óleo e filtros, verificação de correias, velas, sistema de freios, suspensão e pneus. Todos os itens de desgaste rápido foram inspecionados e substituídos quando necessário, garantindo que o Kwid estivesse 100% pronto para rodar sem preocupações.",
@@ -105,7 +105,7 @@ const allRepairCases: RepairCase[] = [
     id: "6",
     name: "Solução de Problemas Elétricos Complexos - Fiat Palio",
     category: ["Elétrica", "Diagnóstico"],
-    image: "/portifolio/palio6.jpg",
+    image: "/portifolio/portifilio6.jpg",
     description: "Luzes no painel, bateria arriando... Encontramos a raiz do problema.",
     fullDescription:
       "Um Fiat Palio apresentava uma série de problemas elétricos intermitentes, como luzes no painel acendendo sem motivo e bateria descarregando. Mario Fanucchi, com seu conhecimento em elétrica automotiva, rastreou a falha até um chicote elétrico com oxidação e um sensor com leitura errada. Realizou o reparo do chicote, substituiu o sensor e testou todos os sistemas, devolvendo a estabilidade elétrica e a confiança ao proprietário do Palio.",
@@ -114,6 +114,23 @@ const allRepairCases: RepairCase[] = [
       "Rastreamento de Curto-Circuitos",
       "Reparo de Fiação e Sensores",
       "Testes de Bateria e Alternador",
+    ],
+  },
+  {
+    id: "7",
+    name: "Reparo de Câmbio Automático com Trancos e Patinação - Honda Fit (São Paulo)",
+    category: ["Câmbio Automático", "Manutenção Corretiva", "Performance"],
+    image: "/portifolio/portifilio7.jpg", // Sugestão de nome de imagem
+    description: "Câmbio automático dando trancos, patinando ou com retenção de marchas em SP? Especialista em conserto e troca de fluido de transmissão automática.",
+    fullDescription:
+      "Um Honda Fit, muito utilizado no dia a dia de São Paulo, chegou à oficina com queixas de trancos nas trocas de marcha, sensação de patinação e retenção excessiva em algumas marchas, problemas comuns em câmbios automáticos, especialmente os do tipo CVT, com o uso severo no trânsito paulistano. Mario Fanucchi, especialista em câmbio automático em São Paulo, realizou um diagnóstico detalhado, que incluiu a verificação do nível e da qualidade do fluido da transmissão (ATF/CVTF). Constatou-se a necessidade de substituição do fluido, que estava degradado e com viscosidade alterada, além da troca do filtro do câmbio. Utilizando equipamento específico para a troca completa do fluido e seguindo as especificações do fabricante Honda, o serviço foi executado. Após a troca e uma recalibração do sistema, o Honda Fit voltou a ter trocas suaves, sem trancos, restaurando o conforto e a confiabilidade para enfrentar o trânsito de São Paulo. Este serviço é crucial para a longevidade do câmbio automático e evita reparos mais caros no futuro.",
+    expertiseApplied: [
+      "Diagnóstico Especializado de Câmbio Automático (CVT e Convencional)",
+      "Troca de Fluido de Transmissão Automática (ATF/CVTF) com Máquina",
+      "Substituição de Filtro de Câmbio Automático",
+      "Reparo de Câmbio Automático (Mecatrônica, Corpos de Válvulas)",
+      "Calibração e Adaptação de Câmbios Automáticos",
+      "Prevenção de Falhas em Câmbio Automático SP"
     ],
   },
 ];

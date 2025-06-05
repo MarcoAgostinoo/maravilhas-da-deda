@@ -13,9 +13,9 @@ export default function HeroSobre() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="animate-on-scroll scale-in absolute inset-0 translate-x-[400px]">
+        <div className="animate-on-scroll scale-in overflow-hidden absolute inset-0">
           <Image
-            className="hidden h-full w-full object-contain md:block"
+            className="hidden h-full w-full object-contain lg:translate-x-[400px] md:block"
             src="/about3.png"
             alt="Oficina Garagem"
             fill

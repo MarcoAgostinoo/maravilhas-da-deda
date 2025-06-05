@@ -5,9 +5,6 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FaLightbulb } from "react-icons/fa"; // Mantido FaLightbulb para o botão "Saber Mais"
 
-// Não vou precisar de FaRocket e FaCheckCircle aqui, pois as props são genéricas
-// e FaLightbulb já foi importado acima.
-
 // --- Interfaces para as Props ---
 
 interface Feature {
@@ -35,10 +32,10 @@ const ServicesOverview = ({
   description,
   features,
   showGlobalCTA = true,
-  globalCTATitle = "Pronto para transformar sua presença digital?", // Título padrão genérico
-  globalCTADescription = "Entre em contato conosco e vamos construir algo incrível juntos.", // Descrição padrão genérica
-  globalCTAText = "Fale Conosco Agora!", // Texto padrão genérico
-  globalCTALink = "#", // Link padrão genérico
+  globalCTATitle = "Pronto para transformar sua presença digital?",
+  globalCTADescription = "Entre em contato conosco e vamos construir algo incrível juntos.",
+  globalCTAText = "Fale Conosco Agora!",
+  globalCTALink = "#",
 }: ServicesOverviewProps) => {
   const [sectionRef, sectionInView] = useInView({
     triggerOnce: true,
@@ -150,7 +147,7 @@ const ServicesOverview = ({
           initial="hidden"
           animate={sectionInView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="grid grid-cols-1 gap-8 md:grid-cols-3"
+          className="grid grid-cols-1 gap-6 md:grid-cols-3"
         >
           {features.map((feature, index) => (
             <motion.div
@@ -165,7 +162,7 @@ const ServicesOverview = ({
                     }
                   : {}
               }
-              onClick={() => handleCardClick(index)}
+              onClick={() => handleCardClick(index)} // O card inteiro continua virando ao ser clicado
               className={`relative h-[300px] cursor-pointer bg-white p-8 shadow-xl transition-all duration-500 will-change-transform md:h-[320px] dark:bg-gray-800 dark:shadow-2xl`}
               style={{
                 perspective: "1000px",
@@ -196,7 +193,10 @@ const ServicesOverview = ({
                 <button
                   className="mt-4 inline-flex items-center justify-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
                   aria-label={`Saber mais sobre ${feature.title}`}
-                  onClick={(e) => e.stopPropagation()}
+                  onClick={(e) => {
+                    e.stopPropagation(); // Mantém a parada da propagação
+                    handleCardClick(index); // Chama diretamente a função de virar o card
+                  }}
                 >
                   Saber Mais <FaLightbulb className="ml-2" />
                 </button>
@@ -204,7 +204,7 @@ const ServicesOverview = ({
 
               {/* Lado Traseiro (Flipped) do Card */}
               <motion.div
-                className="absolute inset-0 flex flex-col justify-between p-8"
+                className="absolute inset-0 flex flex-col justify-between p-1"
                 initial={false}
                 animate={{
                   rotateY: flippedCardIndex === index ? 0 : -180,
@@ -218,21 +218,20 @@ const ServicesOverview = ({
                   }deg)`,
                 }}
               >
-                <div>
+                <div> {/* Mantido o layout original do verso */}
                   <h3 className="mb-3 text-xl font-semibold text-gray-900 dark:text-white">
                     {feature.title} - Detalhes
                   </h3>
                   {feature.details}
                 </div>
-                <div className="mt-4 flex flex-col items-center">
+                <div className="mt-4 flex flex-col items-center"> {/* Mantido o layout original do verso */}
                   <a
                     href={feature.callToActionLink}
                     className="inline-flex items-center bg-blue-600 px-5 py-2 text-white shadow-md transition-transform hover:scale-105 hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none dark:bg-blue-500 dark:hover:bg-blue-600"
                     aria-label={feature.callToActionText}
                     onClick={(e) => e.stopPropagation()}
                   >
-                    {feature.callToActionText}{" "}
-                    {/* Aqui você pode adicionar um ícone específico, se desejar. Por exemplo, FaCheckCircle */}
+                    {feature.callToActionText}
                   </a>
                   <button
                     onClick={(e) => {
@@ -270,8 +269,7 @@ const ServicesOverview = ({
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              {globalCTAText}{" "}
-              {/* Aqui você pode adicionar um ícone, se desejar. Por exemplo, FaPhoneAlt */}
+              {globalCTAText}
             </motion.a>
           </motion.div>
         )}
