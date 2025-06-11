@@ -192,4 +192,4 @@ const EmblaCarousel: React.FC<PropType> = ({
 };
 
 export default EmblaCarousel;
-const imageExtensions = ['.png', '.WEBP', '.jpg', '.jpg', '.jpg', '.jpg', '.jpg'];
+const imageExtensions = ['.png', '.jpg', '.jpg', '.jpg', '.jpg', '.jpg', '.jpg'];
