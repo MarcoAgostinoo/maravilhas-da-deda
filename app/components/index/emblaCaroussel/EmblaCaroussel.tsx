@@ -27,7 +27,7 @@ const slideContent = [
   {
     title: "Freios com Segurança Total no Trânsito - Chevrolet Onix",
     description: "Chiado e pedal duro no anda-e-para da cidade? Solução garantida.",
-    url: "/portifolio/port_onix.webp",
+    url: "/p/servicos",
   },
   {
     title: "Restauração de Potência e Economia - Fiat Argo",
@@ -141,7 +141,7 @@ const EmblaCarousel: React.FC<PropType> = ({
                 >
                   <div className={`${styles.embla__slide__number}`}>
                     <Image
-                      src={`/index/caroucelEmbla${index + 1}.jpg`}
+                      src={`/index/caroucelEmbla${index + 1}${imageExtensions[index]}`}
                       alt={`Projeto ${index + 1}`}
                       className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
                       loading="lazy"
@@ -192,3 +192,4 @@ const EmblaCarousel: React.FC<PropType> = ({
 };
 
 export default EmblaCarousel;
+const imageExtensions = ['.png', '.WEBP', '.jpg', '.jpg', '.jpg', '.jpg', '.jpg'];
