@@ -15,7 +15,7 @@ const AboutSection = () => {
                 <div className="animate-on-scroll fade-in-right w-1/2 self-start px-3">
                   <Image
                     className="hover-scale h-auto w-full object-cover shadow-lg transition-all dark:shadow-gray-700"
-                    src="/index/about1.png"
+                    src="/index/about1.jpg"
                     alt="About Us"
                     width={500}
                     height={300}
@@ -25,7 +25,7 @@ const AboutSection = () => {
                 <div className="animate-on-scroll fade-in-left w-1/2 self-end px-3">
                   <Image
                     className="hover-scale h-auto w-full object-cover shadow-lg transition-all dark:shadow-gray-700"
-                    src="/index/about01.png"
+                    src="/index/about2.png"
                     alt="About Us"
                     width={500}
                     height={300}

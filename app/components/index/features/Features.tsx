@@ -2,22 +2,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
+// Textos alinhados com a estratégia de marca da Garagem Oficina
 const features = [
   {
     title: "Experiência Comprovada",
-    desc: "Mais de 25 anos de atuação em mecânica automotiva, garantindo diagnósticos rápidos e precisos para qualquer tipo de veículo.",
+    desc: "Com mais de 20 anos de experiência, Mario Fanucchi oferece diagnósticos precisos e soluções eficazes, baseadas em um profundo conhecimento técnico.",
   },
   {
     title: "Confiança e Transparência",
-    desc: "Diagnósticos honestos e orçamentos claros, sem serviços desnecessários. Você sabe exatamente o que seu carro precisa.",
+    desc: "Acreditamos em diagnósticos honestos e orçamentos claros. Explicamos cada passo, sem empurrar serviços desnecessários. Sua confiança é nosso maior ativo.",
   },
   {
     title: "Qualidade e Precisão",
-    desc: "Reparos feitos com peças de qualidade e mão de obra especializada para garantir durabilidade e segurança na estrada.",
+    desc: "Cada reparo é executado com atenção meticulosa aos detalhes, utilizando peças de qualidade para garantir a durabilidade e a segurança do seu veículo.",
   },
   {
     title: "Atendimento Personalizado",
-    desc: "Todo o serviço é realizado diretamente por Mario Fanucchi, oferecendo cuidado individualizado e atenção aos mínimos detalhes.",
+    desc: "Aqui você fala diretamente com o especialista. Todo o serviço é realizado pessoalmente por Mario Fanucchi, garantindo um cuidado único e atenção total ao seu carro.",
   },
 ];
 
@@ -29,8 +30,8 @@ export default function Features() {
           {/* Imagem */}
           <div className="relative flex w-full items-center justify-center lg:w-1/2">
             <Image
-              src="/about1.jpg"
-              alt="Feature"
+              src="/index/about3.jpg" // Sugestão: Usar uma foto real de Mario Fanucchi trabalhando
+              alt="Mario Fanucchi, mecânico especialista da Garagem Oficina, trabalhando em um motor."
               width={600}
               height={400}
               className="w-full rounded-lg object-contain shadow-2xl"
@@ -45,15 +46,13 @@ export default function Features() {
           {/* Texto e features */}
           <div className="flex w-full flex-col justify-center lg:w-1/2">
             <p className="mb-2 text-sm font-semibold tracking-wider text-orange-500 uppercase">
-              POR QUE NOS ESCOLHER!
+              POR QUE ESCOLHER A GARAGEM OFICINA
             </p>
-            <h2 className="mb-4 text-4xl leading-tight font-extrabold text-blue-900 dark:text-white">
-              Algumas Razões Pelas Quais As Pessoas Nos Escolhem!
+            <h2 className="mb-4 text-4xl font-extrabold leading-tight text-blue-900 dark:text-white">
+              A Confiança que Nasce da Experiência
             </h2>
             <p className="mb-8 text-base text-gray-700 dark:text-gray-300">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-              lorem sit clita duo justo magna dolore erat amet
+              Na Garagem Oficina, entendemos que seu carro é mais que um veículo: é parte essencial do seu dia a dia. Por isso, nosso compromisso é oferecer um serviço onde a técnica apurada encontra a honestidade e o atendimento pessoal.
             </p>
             <div className="space-y-6">
               {features.map((item, idx) => (
