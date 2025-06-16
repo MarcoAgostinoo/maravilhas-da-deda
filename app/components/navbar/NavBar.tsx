@@ -6,13 +6,11 @@ import {
   NavbarToggle,
 } from "flowbite-react";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation"; // <-- Importe usePathname
+import { useState, useEffect, useRef } from "react"; // Adicione useRef
+import { usePathname } from "next/navigation";
 import {
   FaInstagram,
   FaFacebook,
-  // FaTwitter,
-  // FaLinkedin,
   FaWhatsapp,
 } from "react-icons/fa";
 import { useTheme } from "@/app/hooks/useTheme";
@@ -23,30 +21,49 @@ export function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const { theme, toggleTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const pathname = usePathname(); // <-- Obtenha o caminho da URL atual
+  const pathname = usePathname();
+  const [isMobile, setIsMobile] = useState(false); // Estado para verificar dispositivo móvel
+  const toggleRef = useRef<HTMLButtonElement>(null); // Referência ao NavbarToggle
 
+  // Define o estado inicial e atualiza ao montar o componente
   useEffect(() => {
     setMounted(true);
+    setIsMobile(window.innerWidth < 768); // Verifica se a tela é menor que 768px
   }, []);
 
-  // Handle scroll effect for navbar
+  // Efeito para atualizar o estado ao rolar a página
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 80);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Efeito para atualizar o estado isMobile ao redimensionar a tela
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Função para fechar o menu em dispositivos móveis
+  const closeMenu = () => {
+    if (isMobile && toggleRef.current) {
+      toggleRef.current.click(); // Simula o clique no toggle para fechar o menu
+    }
+  };
 
   return (
     <div className="flex h-0 text-white lg:h-12">
       <div className="hidden w-full overflow-hidden md:flex">
         <div className="relative w-8/12 overflow-hidden bg-gradient-to-r from-orange-500 to-orange-600 md:overflow-visible dark:from-orange-600 dark:to-orange-700">
-          <div className="absolute top-0 -right-6 -skew-x-35 bg-gradient-to-r from-orange-600 to-orange-700 p-6 dark:from-orange-700 dark:to-orange-800"></div>{" "}
+          <div className="absolute top-0 -right-6 -skew-x-35 bg-gradient-to-r from-orange-600 to-orange-700 p-6 dark:from-orange-700 dark:to-orange-800"></div>
           <div className="flex items-center">
             <p className="font- animate-on-scroll fade-in-up relative z-10 mt-2 ml-8 text-lg font-semibold tracking-wide text-white dark:text-gray-100">
-              Siga-nos:{" "}
+              Siga-nos:
             </p>
             <div className="mt-3 ml-4 flex gap-4">
               <Link
@@ -63,26 +80,12 @@ export function NavBar() {
               >
                 <FaFacebook size={22} />
               </Link>
-              {/* <Link
-                href="https://linkedin.com"
-                target="_blank"
-                className="text-white transition-all hover:scale-110 hover:text-gray-200 hover:shadow-lg dark:text-gray-100"
-              >
-                <FaLinkedin size={22} />
-              </Link> */}
-              {/* <Link
-                href="https://FaTwitter.com"
-                target="_blank"
-                className="text-white transition-all hover:scale-110 hover:text-gray-200 hover:shadow-lg dark:text-gray-100"
-              >
-                <FaTwitter size={22} />
-              </Link> */}
             </div>
           </div>
         </div>
         <div className="w-4/12 bg-gradient-to-r from-blue-900 to-blue-800 dark:from-blue-950 dark:to-blue-900">
           <p className="animate-on-scroll fade-in-up mt-2 ml-16 text-lg font-semibold tracking-wide text-white dark:text-gray-100">
-            Telefone: 99703-2814{" "}
+            Telefone: 99703-2814
           </p>
         </div>
       </div>
@@ -96,11 +99,7 @@ export function NavBar() {
         }`}
       >
         <div className="container mx-auto flex flex-wrap items-center justify-between px-0 py-0">
-          <NavbarBrand
-            as={Link}
-            href="/"
-            className="animate-on-scroll fade-in-up"
-          >
+          <NavbarBrand as={Link} href="/" className="animate-on-scroll fade-in-up">
             <span
               className={`flex items-center gap-2 bg-gradient-to-r ${isScrolled ? "scroll-text-adjust from-orange-400 to-orange-500" : "from-white to-white"} bg-clip-text text-2xl font-bold text-transparent brightness-110 contrast-125 filter transition-all duration-300 hover:scale-105 hover:from-blue-600 hover:to-indigo-600 hover:brightness-125 dark:from-blue-400 dark:to-indigo-300 dark:hover:from-blue-500 dark:hover:to-indigo-400`}
             >
@@ -116,7 +115,6 @@ export function NavBar() {
           </NavbarBrand>
 
           <div className="flex items-center gap-3 lg:order-last">
-            {/* Dark Mode Toggle */}
             {mounted && (
               <button
                 onClick={toggleTheme}
@@ -129,8 +127,6 @@ export function NavBar() {
                 )}
               </button>
             )}
-
-            {/* Sign In Button - Desktop */}
             <div className="hidden md:block">
               <Link
                 href="https://wa.me/5511997032814?text=Olá! Gostaria de saber mais sobre os serviços da Kisite"
@@ -143,9 +139,8 @@ export function NavBar() {
                 <span className="font-semibold">WhatsApp</span>
               </Link>
             </div>
-
-            {/* Mobile Menu Toggle */}
             <NavbarToggle
+              ref={toggleRef} // Adiciona a referência ao toggle
               className={`border-2 transition-all hover:scale-110 lg:hidden ${
                 isScrolled
                   ? "border-gray-800 text-gray-800 dark:border-gray-200 dark:text-gray-200"
@@ -162,55 +157,31 @@ export function NavBar() {
                   : "bg-black/70 lg:bg-transparent"
               }`}
             >
-              <NavItem href="/" isActive={pathname === "/"} isScrolled={isScrolled}> {/* <-- Modificado */}
-                <span
-                  className={`text-normal-adjust ${isScrolled ? "scroll-text-adjust" : ""}`}
-                >
+              <NavItem href="/" isActive={pathname === "/"} isScrolled={isScrolled} onClick={closeMenu}>
+                <span className={`text-normal-adjust ${isScrolled ? "scroll-text-adjust" : ""}`}>
                   Início
                 </span>
               </NavItem>
-              <NavItem href="/p/sobre" isActive={pathname === "/p/sobre"} isScrolled={isScrolled}> {/* <-- Modificado */}
-                <span
-                  className={`text-normal-adjust ${isScrolled ? "scroll-text-adjust" : ""}`}
-                >
+              <NavItem href="/p/sobre" isActive={pathname === "/p/sobre"} isScrolled={isScrolled} onClick={closeMenu}>
+                <span className={`text-normal-adjust ${isScrolled ? "scroll-text-adjust" : ""}`}>
                   Sobre
                 </span>
               </NavItem>
-              <NavItem
-                href="/p/servicos"
-                isActive={pathname === "/p/servicos"} // <-- Modificado
-                isScrolled={isScrolled}
-              >
-                <span
-                  className={`text-normal-adjust ${isScrolled ? "scroll-text-adjust" : ""}`}
-                >
+              <NavItem href="/p/servicos" isActive={pathname === "/p/servicos"} isScrolled={isScrolled} onClick={closeMenu}>
+                <span className={`text-normal-adjust ${isScrolled ? "scroll-text-adjust" : ""}`}>
                   Serviços
                 </span>
               </NavItem>
-              <NavItem
-                href="/p/portifolio"
-                isActive={pathname === "/p/portifolio"} // <-- Modificado
-                isScrolled={isScrolled}
-              >
-                <span
-                  className={`text-normal-adjust ${isScrolled ? "scroll-text-adjust" : ""}`}
-                >
+              <NavItem href="/p/portifolio" isActive={pathname === "/p/portifolio"} isScrolled={isScrolled} onClick={closeMenu}>
+                <span className={`text-normal-adjust ${isScrolled ? "scroll-text-adjust" : ""}`}>
                   Portifólio
                 </span>
               </NavItem>
-              <NavItem
-                href="/p/contato"
-                isActive={pathname === "/p/contato"} // <-- Modificado
-                isScrolled={isScrolled}
-              >
-                <span
-                  className={`text-normal-adjust ${isScrolled ? "scroll-text-adjust" : ""}`}
-                >
+              <NavItem href="/p/contato" isActive={pathname === "/p/contato"} isScrolled={isScrolled} onClick={closeMenu}>
+                <span className={`text-normal-adjust ${isScrolled ? "scroll-text-adjust" : ""}`}>
                   Contato
                 </span>
               </NavItem>
-
-              {/* Sign In Button - Mobile Only */}
               <div className="pt-2 lg:hidden">
                 <div className="md:block">
                   <Link
@@ -233,18 +204,20 @@ export function NavBar() {
   );
 }
 
-// Component for navigation items
+// Componente para itens de navegação
 interface NavItemProps {
   href: string;
   children: React.ReactNode;
   isActive: boolean;
   isScrolled: boolean;
+  onClick?: () => void; // Adiciona a propriedade onClick
 }
 
-function NavItem({ href, children, isActive, isScrolled }: NavItemProps) {
+function NavItem({ href, children, isActive, isScrolled, onClick }: NavItemProps) {
   return (
     <Link
       href={href}
+      onClick={onClick} // Passa o manipulador onClick
       className={`group relative block py-2 text-lg font-semibold transition-all hover:scale-105 lg:py-1 ${
         isScrolled
           ? isActive
