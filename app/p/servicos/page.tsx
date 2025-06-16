@@ -111,7 +111,7 @@ export default function Servicos() {
               </>
             ),
             callToActionText: "Agende seu Diagnóstico",
-            callToActionLink: "/contato",
+            callToActionLink: "/p/contato",
           },
           {
             icon: (
@@ -134,7 +134,7 @@ export default function Servicos() {
               </>
             ),
             callToActionText: "Garanta Sua Segurança",
-            callToActionLink: "/contato",
+            callToActionLink: "/p/contato",
           },
           {
             icon: (
@@ -156,14 +156,14 @@ export default function Servicos() {
               </>
             ),
             callToActionText: "Cuide do Seu Carro",
-            callToActionLink: "/contato",
+            callToActionLink: "/p/contato",
           },
         ]}
         showGlobalCTA={true}
         globalCTATitle="Pronto para o Cuidado que Seu Carro Merece?"
         globalCTADescription="Entre em contato com Mario Fanucchi e agende o serviço que seu veículo precisa. Qualidade e confiança garantidas."
         globalCTAText="Fale Conosco Agora!"
-        globalCTALink="/contato"
+        globalCTALink="/p/contato"
       />
     </div>
   );

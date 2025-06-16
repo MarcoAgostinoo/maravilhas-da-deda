@@ -20,7 +20,7 @@ export default function Sobre() {
           {
             name: "Mario Fanucchi",
             role: "Proprietário",
-            image: "/about1.jpg",
+            image: "/index/about1.jpg",
             social: {
               facebook: "https://www.facebook.com/mario.fanucchi.1",
               instagram: "https://www.instagram.com/mario.fanucchi.1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",

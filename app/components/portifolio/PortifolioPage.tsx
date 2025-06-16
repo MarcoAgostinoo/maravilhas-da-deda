@@ -463,7 +463,7 @@ const PortfolioPage = () => {
                 {/* Botões de Ação (Rodapé - não rola) */}
                 <div className="mt-6 flex flex-shrink-0 flex-wrap justify-center gap-4">
                   <a
-                    href="/contato" // Link para a página de contato/agendamento
+                    href="/p/contato" // Link para a página de contato/agendamento
                     title={`Agendar serviço para o caso de ${selectedRepairCase.name}`}
                     className="inline-flex items-center bg-blue-900 px-6 py-3 text-white shadow-md transition-transform hover:scale-105 hover:bg-blue-800 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none dark:bg-blue-900 dark:hover:bg-blue-800"
                   >

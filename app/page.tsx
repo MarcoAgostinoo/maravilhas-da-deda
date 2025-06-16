@@ -64,7 +64,7 @@ export default function Home() {
               </>
             ),
             callToActionText: "Agendar Diagnóstico",
-            callToActionLink: "/servicos/diagnostico",
+            callToActionLink: "/p/servicos",
           },
           {
             icon: (
@@ -88,7 +88,7 @@ export default function Home() {
               </>
             ),
             callToActionText: "Ver Serviços de Ar Condicionado",
-            callToActionLink: "/servicos/ar-condicionado",
+            callToActionLink: "/p/servicos",
           },
           {
             icon: (
@@ -112,7 +112,7 @@ export default function Home() {
               </>
             ),
             callToActionText: "Conhecer Manutenção",
-            callToActionLink: "/servicos/manutencao",
+            callToActionLink: "/p/servicos",
           },
         ]}
         showGlobalCTA={true}

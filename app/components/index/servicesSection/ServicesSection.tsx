@@ -1,5 +1,6 @@
 import "animate.css";
 import Image from "next/image";
+import Link from "next/link";
 import { ThemeProvider } from "flowbite-react";
 
 const services = [
@@ -8,21 +9,21 @@ const services = [
     img2: "/index/Servicessuspecao2.jpeg", // Imagem maior para suspensão
     title: "Sistema de Suspensão",
     desc: "Garantimos o conforto, estabilidade e segurança. Diagnóstico e reparo em amortecedores, molas, pivôs e mais.",
-    link: "#", // Futuramente pode apontar para /servicos/suspensao
+    link: "/p/servicos", // Futuramente pode apontar para /servicos/suspensao
   },
   {
     img: "/index/ServicesFreio1.jpg", // Imagem de ícone/miniatura para freios
     img2: "/index/ServicesFreio2.jpg", // Imagem maior para freios
     title: "Sistema de Freios",
     desc: "Sua segurança em primeiro lugar. Revisão completa, troca de pastilhas, discos, fluidos e reparos em geral.",
-    link: "#", // Futuramente pode apontar para /servicos/freios
+    link: "/p/servicos", // Futuramente pode apontar para /servicos/freios
   },
   {
     img: "/index/Servicesmotor1.jpg", // Imagem de ícone/miniatura para motor
     img2: "/index/Servicesmotor2.jpg", // Imagem maior para motor
     title: "Motor",
     desc: "O coração do seu carro em boas mãos. Diagnóstico, reparo, troca de correias, análise de ruídos e vazamentos.",
-    link: "#", // Futuramente pode apontar para /servicos/motor
+    link: "/p/servicos", // Futuramente pode apontar para /servicos/motor
   },
 ];
 
@@ -81,12 +82,12 @@ export default function ServicesSection() {
                     <p className="mb-6 text-center text-gray-700 dark:text-gray-300">
                       {service.desc}
                     </p>
-                    <a
+                    <Link
                       href={service.link}
                       className="inline-block rounded bg-orange-500 px-6 py-2 font-semibold text-white shadow transition-all duration-300 hover:bg-orange-600 dark:bg-orange-400 dark:hover:bg-orange-500"
                     >
                       Leia Mais
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
