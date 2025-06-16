@@ -74,7 +74,7 @@ export default function HeroServices() {
                 <div className="transitiona-all absolute inset-0 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] opacity-70 blur-lg filter duration-1000 group-hover:opacity-100 group-hover:duration-200 dark:opacity-50"></div>
 
                 <a
-                  href="/contato" // Link para a página de contato
+                  href="/p/contato" // Link para a página de contato
                   title="Fale Conosco e Agende seu Serviço"
                   className="relative inline-flex items-center justify-center border border-transparent bg-orange-500 px-4 py-2.5 text-sm font-bold text-white transition-all duration-200 hover:bg-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:outline-none sm:px-6 sm:py-3 sm:text-base dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-600"
                   role="button"
