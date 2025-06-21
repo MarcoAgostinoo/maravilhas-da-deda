@@ -9,9 +9,9 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Garagem Oficina",
+  title: "Maravilhas da Deda",
   description:
-    "A Garagem Oficina realiza serviços automotivos de alta qualidade, desde manutenções preventivas até reparos complexos, garantindo segurança e desempenho do seu veículo. Agende sua visita.",
+    "A Maravilhas da Deda realiza serviços automotivos de alta qualidade, desde manutenções preventivas até reparos complexos, garantindo segurança e desempenho do seu veículo. Agende sua visita.",
 };
 
 export default function RootLayout({

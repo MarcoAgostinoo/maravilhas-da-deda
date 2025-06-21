@@ -14,54 +14,58 @@ import "swiper/css/navigation";
 
 const slides = [
   {
-    image: "/index/slide_01.png",
-    alt: "Slide 1",
+    image: "/hero1.jpg", // Substitua pela imagem da vitrine principal
+    alt: "Bolos e doces decorados",
     pt: "pt-[120px]",
-    title: "Bem-vindo à Garagem Oficina",
-    subtitle: "Serviços Mecânicos em Geral",
-    tagline: "",
-    description: "A Garagem Oficina realiza serviços automotivos de alta qualidade, desde manutenções preventivas até reparos complexos, garantindo segurança e desempenho do seu veículo. Agende sua visita.",
+    title: "Encante seus convidados",
+    subtitle: "Com doces e bolos sofisticados",
+    tagline: "Maravilhas da Dedá",
+    description: "Doces finos e bolos decorados para transformar seu evento em uma experiência inesquecível. Elegância, sabor e beleza em cada detalhe.",
     buttons: [
       {
-        text: "Entre em contato",
-        href: "https://wa.me/5511997032814?text=Olá! Gostaria de informações sobre serviços mecânicos",
-        className: "flex items-center justify-center border border-yellow-400 px-5 py-2.5 text-sm font-medium text-yellow-400 shadow-lg hover:bg-yellow-400 hover:text-white hover:shadow-yellow-400/30 focus:ring-4 focus:ring-yellow-300 focus:outline-none",
+        text: "Fazer seu pedido",
+        href: "https://wa.me/5511997032814?text=Olá! Gostaria de fazer um orçamento para doces e bolos personalizados.",
+        className:
+          "flex items-center justify-center border border-yellow-400 px-5 py-2.5 text-sm font-medium text-yellow-400 shadow-lg hover:bg-yellow-400 hover:text-white hover:shadow-yellow-400/30 focus:ring-4 focus:ring-yellow-300 focus:outline-none",
       },
     ],
   },
   {
-    image: "/index/slide_02.png",
-    alt: "Slide 2",
-    pt: "pt-[150px]",
-    title: "Estamos aqui para te apoiar",
-    subtitle: "Serviços de Manutenção Automotiva",
-    tagline: "",
-    description: "Sob o comando de Mario Fanucchi, mecânico com mais de duas décadas de experiência, oferecemos soluções completas para o seu carro, desde a manutenção preventiva até reparos complexos.",
+    image: "/hero2.jpg", // Imagem de bolos de casamento ou doces finos
+    alt: "Bolos de casamento",
+    pt: "pt-[120px]",
+    title: "Momentos que merecem o melhor",
+    subtitle: "Bolos, doces e encantos",
+    tagline: "Feitos com amor e perfeição",
+    description: "Seja um casamento, aniversário ou evento corporativo, criamos verdadeiras obras de arte com sabor e elegância para deixar sua celebração inesquecível.",
     buttons: [
       {
-        text: "Nossos serviços",
-        href: "/p/servicos",
-        className: "flex items-center justify-center bg-gray-700 px-5 py-2.5 text-sm font-medium text-white shadow-lg hover:bg-gray-800 hover:shadow-gray-700/30 focus:ring-4 focus:ring-gray-300 focus:outline-none",
+        text: "Ver portfólio",
+        href: "/#portfolio",
+        className:
+          "flex items-center justify-center bg-yellow-400 px-5 py-2.5 text-sm font-medium text-gray-900 shadow-lg hover:bg-yellow-500 hover:shadow-yellow-400/30 focus:ring-4 focus:ring-yellow-300 focus:outline-none",
       },
     ],
   },
   {
-    image: "/index/slide_03.png",
-    alt: "Slide 3",
+    image: "/hero3.jpg", // Imagem de mesa de doces decorada
+    alt: "Doces finos para eventos",
     pt: "pt-[120px]",
-    title: "Temos uma vasta experiência",
-    subtitle: "Serviços Automotivos e Reparos de Qualidade",
-    tagline: "",
-    description: "Agende sua revisão ou solicite um orçamento. Confiança, qualidade e um atendimento personalizado que faz a diferença. Afinal, sua satisfação é o nosso maior combustível.",
+    title: "Sabores que encantam",
+    subtitle: "Experiência e sofisticação",
+    tagline: "Confeitaria premium em São Paulo",
+    description: "Com anos de experiência na alta gastronomia, entregamos doces e bolos que unem sabor, beleza e qualidade, feitos sob medida para tornar sua festa única.",
     buttons: [
       {
         text: "Saiba mais",
-        href: "/p/sobre",
-        className: "flex items-center justify-center border border-yellow-400 px-5 py-2.5 text-sm font-medium text-yellow-400 shadow-lg hover:bg-yellow-400 hover:text-white hover:shadow-yellow-400/30 focus:ring-4 focus:ring-yellow-300 focus:outline-none",
+        href: "/#sobre",
+        className:
+          "flex items-center justify-center border border-yellow-400 px-5 py-2.5 text-sm font-medium text-yellow-400 shadow-lg hover:bg-yellow-400 hover:text-white hover:shadow-yellow-400/30 focus:ring-4 focus:ring-yellow-300 focus:outline-none",
       },
     ],
   },
 ];
+
 
 export function Hero() {
   const [isMounted, setIsMounted] = useState(false);
@@ -102,7 +106,7 @@ export function Hero() {
                   <h2 className="fade-in-up mb-4 text-4xl font-black text-white dark:text-gray-100 drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)] delay-200 md:text-5xl lg:text-6xl">
                     <span className="font-black text-orange-400 dark:text-orange-300 drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">{slide.title}</span>
                     <br />
-                    <span className="font-black text-orange-400 dark:text-orange-300 drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">{slide.subtitle}</span>
+                    <span className="font-black text-white-500 mt-20 dark:text-orange-300 drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">{slide.subtitle}</span>
                   </h2>
                   <p className="fade-in-up mb-8 max-w-2xl text-lg leading-relaxed font-semibold text-white dark:text-gray-200 drop-shadow-[0_4px_3px_rgba(0,0,0,0.5)] delay-300 md:text-xl">
                     {slide.description}

@@ -5,27 +5,28 @@ import { ThemeProvider } from "flowbite-react";
 
 const services = [
   {
-    img: "/index/Servicessuspecao1.jpg", // Imagem de ícone/miniatura para suspensão
-    img2: "/index/Servicessuspecao2.jpeg", // Imagem maior para suspensão
-    title: "Sistema de Suspensão",
-    desc: "Garantimos o conforto, estabilidade e segurança. Diagnóstico e reparo em amortecedores, molas, pivôs e mais.",
-    link: "/p/servicos", // Futuramente pode apontar para /servicos/suspensao
+    img: "/ServicesSection/services1.png", // Ex: Close-up de uma flor de açúcar
+    img2: "/ServicesSection/services2.jpeg", // Ex: Foto de um bolo de casamento elegante
+    title: "Casamentos Inesquecíveis",
+    desc: "O bolo de casamento é o símbolo da celebração do amor. Criamos designs que harmonizam com o estilo da sua festa, do clássico ao contemporâneo, e mesas de doces finos para encantar seus convidados.",
+    link: "/servicos/casamentos",
   },
   {
-    img: "/index/ServicesFreio1.jpg", // Imagem de ícone/miniatura para freios
-    img2: "/index/ServicesFreio2.jpg", // Imagem maior para freios
-    title: "Sistema de Freios",
-    desc: "Sua segurança em primeiro lugar. Revisão completa, troca de pastilhas, discos, fluidos e reparos em geral.",
-    link: "/p/servicos", // Futuramente pode apontar para /servicos/freios
+    img: "/deda/aniversario-miniatura.jpg", // Ex: Close-up de um cupcake temático
+    img2: "/deda/aniversario-bolo-tematico.jpg", // Ex: Foto de um bolo de aniversário vibrante
+    title: "Festas e Aniversários",
+    desc: "Seja um aniversário infantil com o personagem favorito do seu filho ou uma celebração cheia de estilo, nós damos vida ao seu tema. Nossos bolos decorados, cupcakes e doces personalizados completam a festa.",
+    link: "/servicos/festas-e-aniversarios",
   },
   {
-    img: "/index/Servicesmotor1.jpg", // Imagem de ícone/miniatura para motor
-    img2: "/index/Servicesmotor2.jpg", // Imagem maior para motor
-    title: "Motor",
-    desc: "O coração do seu carro em boas mãos. Diagnóstico, reparo, troca de correias, análise de ruídos e vazamentos.",
-    link: "/p/servicos", // Futuramente pode apontar para /servicos/motor
+    img: "/deda/corporativo-miniatura.jpg", // Ex: Close-up de um doce com logo
+    img2: "/deda/corporativo-kit-doces.jpg", // Ex: Foto de um kit elegante de doces corporativos
+    title: "Eventos Corporativos",
+    desc: "Surpreenda clientes e parceiros com um toque de sofisticação. Oferecemos kits de doces, bolos com o logo da sua empresa e lembranças personalizadas que fortalecem a imagem da sua marca.",
+    link: "/servicos/corporativo",
   },
 ];
+
 
 export default function ServicesSection() {
   return (
@@ -34,10 +35,10 @@ export default function ServicesSection() {
         <div className="container mx-auto px-4">
           <div className="animate-on-scroll fade-in-up mx-auto max-w-3xl pb-8 text-center">
             <p className="mb-2 font-medium uppercase tracking-widest text-orange-500 dark:text-orange-400">
-              Alguns de Nossos Serviços
+              Para Cada Ocasião, uma Doce Maravilha
             </p>
             <h1 className="mb-4 text-4xl font-bold text-blue-900 md:text-5xl dark:text-white">
-              Serviços Completos para Seu Veículo na Garagem Oficina
+              Celebrações Únicas, Doces Inesquecíveis
             </h1>
           </div>
           <div className="flex flex-wrap justify-center gap-8">
@@ -86,7 +87,7 @@ export default function ServicesSection() {
                       href={service.link}
                       className="inline-block rounded bg-orange-500 px-6 py-2 font-semibold text-white shadow transition-all duration-300 hover:bg-orange-600 dark:bg-orange-400 dark:hover:bg-orange-500"
                     >
-                      Leia Mais
+                      Saiba Mais
                     </Link>
                   </div>
                 </div>

@@ -30,7 +30,7 @@ export function FooTer() {
       <div className="relative container mx-auto grid grid-cols-1 gap-10 px-6 py-12 md:grid-cols-4">
         {/* Branding */}
         <div className="space-y-4">
-          <h3 className="text-2xl font-bold tracking-wide">Garagem Oficina</h3>
+          <h3 className="text-2xl font-bold tracking-wide">Maravilhas da Deda</h3>
           <p className="text-sm italic">&quot;Nosso Compromisso com Excelência Automotiva&quot;</p>
           <p className="text-xs text-gray-300 dark:text-gray-400">
             Com mais de 20 anos de experiência, oferecemos diagnósticos precisos, reparos confiáveis e
@@ -133,7 +133,7 @@ export function FooTer() {
 
       {/* Copyright */}
       <div className="relative border-t border-blue-700 dark:border-gray-700 py-6 text-center text-sm text-gray-300 dark:text-gray-400">
-        <p>&copy; {new Date().getFullYear()} Garagem Oficina. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} Maravilhas da Deda. Todos os direitos reservados.</p>
         <p>
           Desenvolvido por{" "}
           <a

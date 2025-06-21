@@ -18,49 +18,51 @@ type PropType = {
   autoplayInterval?: number;
 };
 
+// Conteúdo dos slides atualizado para "Maravilhas da Dedá"
 const slideContent = [
   {
-    title: "Eliminação de Barulhos na Suspensão - Hyundai HB20",
-    description: "Fim dos 'toc-toc' ao passar em buracos e valetas de São Paulo.",
-    url: "/p/servicos",
+    title: "Bolos de Casamento: A Obra-Prima do seu Grande Dia",
+    description: "Designs elegantes e sabores memoráveis que harmonizam com sua celebração. Cada bolo é uma joia comestível, criada para ser o centro das atenções.",
+    url: "/p/servicos/casamentos",
   },
   {
-    title: "Freios com Segurança Total no Trânsito - Chevrolet Onix",
-    description: "Chiado e pedal duro no anda-e-para da cidade? Solução garantida.",
-    url: "/p/servicos",
+    title: "Festas e Aniversários Temáticos",
+    description: "Damos vida à sua comemoração! Bolos e doces personalizados que transformam o tema da sua festa em uma deliciosa realidade.",
+    url: "/p/servicos/aniversarios",
   },
   {
-    title: "Restauração de Potência e Economia - Fiat Argo",
-    description: "Carro 'engasgando' e alto consumo? Injeção eletrônica impecável.",
-    url: "/p/servicos",
+    title: "Bolo no Pote: Felicidade em Camadas",
+    description: "Uma dose individual de carinho. Sabores como Ninho com Frutas Vermelhas e Chocolate Belga para adoçar qualquer momento.",
+    url: "/p/produtos/bolo-no-pote",
   },
   {
-    title: "Resfriamento Eficiente em Dias Quentes - VW Gol",
-    description: "Motor superaquecendo no trânsito das Marginais? Resolvemos para você.",
-    url: "/p/servicos",
+    title: "Kit Festa: Celebração Prática e Deliciosa",
+    description: "A solução completa para sua festa. Combinação perfeita de bolo e brigadeiros gourmet para celebrar sem preocupações.",
+    url: "/p/produtos/kit-festa",
   },
   {
-    title: "Preparação de Veículo para Aplicativos - Renault Kwid",
-    description: "Motorista de app precisa de confiabilidade. Garantimos seu ganha-pão.",
-    url: "/p/servicos",
+    title: "Cheesecake de Frutas Vermelhas",
+    description: "A combinação perfeita do aveludado do cream cheese com o frescor das frutas. Uma sobremesa sofisticada que encanta a todos.",
+    url: "/p/produtos/cheesecake",
   },
   {
-    title: "Solução de Problemas Elétricos Complexos - Fiat Palio",
-    description: "Luzes no painel, bateria arriando... Encontramos a raiz do problema.",
-    url: "/p/servicos",
+    title: "Eventos Corporativos com Sofisticação",
+    description: "Impressione clientes e colaboradores com doces finos e presentes personalizados que fortalecem a imagem da sua marca.",
+    url: "/p/servicos/corporativo",
   },
   {
-    title: "Reparo de Câmbio Automático com Trancos e Patinação - Honda Fit (São Paulo)",
-    description: "Câmbio automático dando trancos, patinando ou com retenção de marchas em SP? Especialista em conserto e troca de fluido de transmissão automática.",
-    url: "/p/servicos",
+    title: "Bolo de Cenoura com Cobertura de Chocolate Belga",
+    description: "O clássico afetivo com um toque gourmet. Massa fofinha e uma cobertura generosa para um café da tarde inesquecível.",
+    url: "/p/produtos/bolos-caseiros",
   },
 ];
 
 const EmblaCarousel: React.FC<PropType> = ({
   slides,
   options,
-  title = "Nossos Projetos",
-  subtitle = "Veja o Que Concluímos Recentemente",
+  // Título e subtítulo padrão atualizados com a identidade da marca
+  title = "Conheça Nossas Maravilhas",
+  subtitle = "Detalhes que encantam, sabores que apaixonam",
   showControls = true,
   showDots = true,
   autoplay = true,
@@ -117,8 +119,9 @@ const EmblaCarousel: React.FC<PropType> = ({
       aria-label={title}
     >
       <div className="mb-8 text-center">
-        <p className="mb-2 text-lg text-blue-900 dark:text-blue-300">{title}</p>
-        <h2 className="text-3xl font-bold text-blue-900 dark:text-white">
+        {/* Trocado para usar as cores da identidade visual (sugestão) */}
+        <p className="mb-2 text-lg" style={{ color: '#B2AC88' }}>{title}</p>
+        <h2 className="text-3xl font-bold" style={{ color: '#4A2C2A' }}>
           {subtitle}
         </h2>
       </div>
@@ -135,14 +138,14 @@ const EmblaCarousel: React.FC<PropType> = ({
               >
                 <a
                   href={slideContent[index].url}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className={styles.embla__slide__link}
                 >
                   <div className={`${styles.embla__slide__number}`}>
                     <Image
+                      // IMPORTANTE: As imagens devem ser nomeadas como caroucelEmbla1.png, caroucelEmbla2.jpg, etc.
                       src={`/index/caroucelEmbla${index + 1}${imageExtensions[index]}`}
-                      alt={`Projeto ${index + 1}`}
+                      // Texto alternativo melhorado para SEO e acessibilidade
+                      alt={`Maravilhas da Dedá - ${slideContent[index].title}`}
                       className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
                       loading="lazy"
                       decoding="async"
@@ -152,7 +155,7 @@ const EmblaCarousel: React.FC<PropType> = ({
                     />
                     <div className={`${styles.embla__slide__overlay}`}>
                       <h3
-                        className={`${styles.embla__slide__title} text-orange-500`}
+                        className={`${styles.embla__slide__title} text-white`} // Cor ajustada para melhor contraste com o overlay
                       >
                         {slideContent[index].title}
                       </h3>
@@ -192,4 +195,8 @@ const EmblaCarousel: React.FC<PropType> = ({
 };
 
 export default EmblaCarousel;
-const imageExtensions = ['.png', '.jpg', '.jpg', '.jpg', '.jpg', '.jpg', '.jpg'];
+
+// NOTA: Certifique-se de que os nomes dos seus arquivos de imagem correspondem a este padrão.
+// Exemplo: /public/index/caroucelEmbla1.png, /public/index/caroucelEmbla2.jpg, etc.
+// O número de extensões deve corresponder ao número de itens no `slideContent`.
+const imageExtensions = ['.png', '.png', '.png', '.png', '.jpg', '.jpg', '.jpg'];

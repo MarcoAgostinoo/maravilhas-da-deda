@@ -110,7 +110,7 @@ export function NavBar() {
                 height={70}
                 className="object-contain"
               />
-              Garagem Oficina
+              Maravilhas da Deda
             </span>
           </NavbarBrand>
 
