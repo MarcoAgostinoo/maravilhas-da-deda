@@ -31,13 +31,13 @@ const services = [
 export default function ServicesSection() {
   return (
     <ThemeProvider>
-      <section className="w-full bg-gray-100 py-16 dark:bg-gray-900">
+      <section className="w-full bg-ivory py-16 dark:bg-chocolate">
         <div className="container mx-auto px-4">
           <div className="animate-on-scroll fade-in-up mx-auto max-w-3xl pb-8 text-center">
-            <p className="mb-2 font-medium uppercase tracking-widest text-orange-500 dark:text-orange-400">
+            <p className="mb-2 font-medium uppercase tracking-widest text-gold dark:text-gold">
               Para Cada Ocasião, uma Doce Maravilha
             </p>
-            <h1 className="mb-4 text-4xl font-bold text-blue-900 md:text-5xl dark:text-white">
+            <h1 className="mb-4 text-4xl font-bold text-chocolate md:text-5xl dark:text-ivory">
               Celebrações Únicas, Doces Inesquecíveis
             </h1>
           </div>
@@ -45,7 +45,7 @@ export default function ServicesSection() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="animate-on-scroll fade-in-up group relative w-full overflow-hidden rounded-lg bg-white shadow-lg transition-transform duration-300 hover:scale-105 dark:bg-gray-800 sm:w-[350px]"
+                className="animate-on-scroll fade-in-up group relative w-full overflow-hidden rounded-lg bg-ivory shadow-lg transition-transform duration-300 hover:scale-105 dark:bg-chocolate sm:w-[350px] border-2 border-gold"
               >
                 {/* Container da imagem */}
                 <div className="relative flex h-56 w-full items-center justify-center overflow-hidden">
@@ -55,7 +55,7 @@ export default function ServicesSection() {
                     alt={`Miniatura de ${service.title}`}
                     width={100}
                     height={100}
-                    className="absolute top-1/2 left-1/2 z-20 h-[100px] w-[100px] -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-orange-500 object-cover opacity-100 shadow-lg transition-all duration-500 group-hover:opacity-0 dark:border-orange-400"
+                    className="absolute top-1/2 left-1/2 z-20 h-[100px] w-[100px] -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-gold object-cover opacity-100 shadow-lg transition-all duration-500 group-hover:opacity-0 dark:border-gold"
                     style={{ objectFit: "cover" }}
                   />
                   {/* Imagem principal com efeito */}
@@ -68,24 +68,24 @@ export default function ServicesSection() {
                     sizes="(max-width: 350px) 100vw, 350px"
                   />
                   {/* Overlay escuro */}
-                  <div className="pointer-events-none absolute inset-0 z-10 bg-black/40 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+                  <div className="pointer-events-none absolute inset-0 z-10 bg-chocolate/40 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
                 </div>
                 {/* Conteúdo */}
                 <div className="relative z-20 flex flex-col items-center px-6 py-8">
                   <div className="flex w-full flex-col items-center">
                     <div className="mb-4 flex w-full items-center justify-center gap-2">
-                      <hr className="w-1/4 border-t-2 border-orange-500 dark:border-orange-400" />
-                      <h3 className="text-center text-xl font-bold text-blue-900 dark:text-white">
+                      <hr className="w-1/4 border-t-2 border-gold dark:border-gold" />
+                      <h3 className="text-center text-xl font-bold text-chocolate dark:text-ivory">
                         {service.title}
                       </h3>
-                      <hr className="w-1/4 border-t-2 border-orange-500 dark:border-orange-400" />
+                      <hr className="w-1/4 border-t-2 border-gold dark:border-gold" />
                     </div>
-                    <p className="mb-6 text-center text-gray-700 dark:text-gray-300">
+                    <p className="mb-6 text-center text-chocolate dark:text-ivory">
                       {service.desc}
                     </p>
                     <Link
                       href={service.link}
-                      className="inline-block rounded bg-orange-500 px-6 py-2 font-semibold text-white shadow transition-all duration-300 hover:bg-orange-600 dark:bg-orange-400 dark:hover:bg-orange-500"
+                      className="inline-block rounded bg-gold px-6 py-2 font-semibold text-chocolate shadow transition-all duration-300 hover:bg-rose dark:bg-gold dark:hover:bg-rose"
                     >
                       Saiba Mais
                     </Link>

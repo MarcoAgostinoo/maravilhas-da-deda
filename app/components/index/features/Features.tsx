@@ -24,17 +24,17 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="w-full bg-white py-16 dark:bg-gray-900">
+    <section className="w-full bg-ivory py-16 dark:bg-chocolate">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center gap-10 lg:flex-row">
           {/* Imagem */}
           <div className="relative flex w-full items-center justify-center lg:w-1/2">
             <Image
-              src="/services1.jpg" // Sugestão: Usar uma foto profissional da Dedá decorando um bolo
+              src="/services1.jpg"
               alt="Andreia 'Dedá', confeiteira da Maravilhas da Dedá, finalizando a decoração de um bolo."
               width={600}
               height={400}
-              className="w-full rounded-lg object-contain shadow-2xl"
+              className="w-full rounded-lg object-contain shadow-2xl border-4 border-gold"
               style={{
                 minHeight: 400,
                 maxHeight: 480,
@@ -45,29 +45,29 @@ export default function Features() {
           </div>
           {/* Texto e features */}
           <div className="flex w-full flex-col justify-center lg:w-1/2">
-            <p className="mb-2 text-sm font-semibold tracking-wider text-orange-500 uppercase">
+            <p className="mb-2 text-sm font-semibold tracking-wider text-gold uppercase">
               POR QUE ESCOLHER A MARAVILHAS DA DEDÁ
             </p>
-            <h2 className="mb-4 text-4xl font-extrabold leading-tight text-blue-900 dark:text-white">
+            <h2 className="mb-4 text-4xl font-extrabold leading-tight text-chocolate dark:text-ivory">
               Sua Celebração, Nossa Obra-Prima
             </h2>
-            <p className="mb-8 text-base text-gray-700 dark:text-gray-300">
+            <p className="mb-8 text-base text-chocolate dark:text-ivory">
               Na Maravilhas da Dedá, acreditamos que cada celebração é um momento único. Mais do que doces, criamos o coração da sua festa: uma obra de arte comestível, pensada em cada detalhe para refletir seus sonhos e encantar seus convidados.
             </p>
             <div className="space-y-6">
               {features.map((item, idx) => (
                 <div key={idx} className="flex items-center gap-4">
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-orange-500">
+                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-gold">
                     <FontAwesomeIcon
                       icon={faCheck}
-                      className="text-2xl text-white"
+                      className="text-2xl text-chocolate"
                     />
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-blue-900 dark:text-white">
+                    <h4 className="text-lg font-bold text-chocolate dark:text-ivory">
                       {item.title}
                     </h4>
-                    <span className="text-sm text-gray-600 dark:text-gray-400">
+                    <span className="text-sm text-sage dark:text-ivory">
                       {item.desc}
                     </span>
                   </div>

@@ -14,7 +14,6 @@ Este é um template moderno e otimizado para desenvolvimento web, construído co
 - Animate.css
 
 ## 📦 Estrutura do Projeto
-
 ```
 ├── app/
 │   ├── components/
@@ -318,3 +317,19 @@ Este template é propriedade exclusiva da **KiSite Soluções Web**. Todos os di
 <div align="center">
   <sub>Desenvolvido com ❤️ pela KiSite Soluções Web</sub>
 </div>
+
+## 🎨 Cores e Tipografia Personalizadas
+
+### Cores
+- **Bege Marfim (Ivory):** #F5F5DC — Sofisticação e base neutra
+- **Marrom Chocolate Amargo:** #4A2C2A — Sabor, cacau e requinte
+- **Verde Sálvia Suave:** #B2AC88 — Toque orgânico e elegante
+- **Dourado Metálico:** #D4AF37 — Detalhes, luxo e celebração
+- **Rosa Chá (Opcional):** #D8C0C0 — Temas românticos
+
+### Tipografia
+- **Títulos e Destaques (Serifada):** Playfair Display
+- **Corpo de Texto (Sem Serifa):** Montserrat
+- **Assinatura/Detalhes (Script):** Great Vibes
+
+As fontes são carregadas via Google Fonts e aplicadas globalmente. Use as classes `font-serif`, `font-sans` e `font-script` do Tailwind para personalizar conforme necessário.

@@ -14,7 +14,7 @@ import "swiper/css/navigation";
 
 const slides = [
   {
-    image: "/hero1.jpg", // Substitua pela imagem da vitrine principal
+    image: "/hero3.jpg", // Substitua pela imagem da vitrine principal
     alt: "Bolos e doces decorados",
     pt: "pt-[120px]",
     title: "Encante seus convidados",

@@ -7,7 +7,7 @@ import EmblaCarousel from "./components/index/emblaCaroussel/EmblaCaroussel";
 import { EmblaOptionsType } from "embla-carousel";
 import { AccordionFaq } from "./components/index/accordion/AccordionFaq";
 import ServicesOverview from "./components/services/servicesOverview/ServicesOverview";
-import { FaMicrochip, FaCarSide, FaWrench } from 'react-icons/fa'
+import { FaBirthdayCake, FaHeart, FaBuilding } from "react-icons/fa";
 
 const OPTIONS: EmblaOptionsType = {
   loop: true,
@@ -32,93 +32,87 @@ export default function Home() {
         slides={SLIDES}
         options={OPTIONS}
         title="Nossos Projetos"
-        subtitle="Veja o Que Concluímos Recentemente"
+        subtitle="Veja o que já encantou nossos clientes"
         showControls={true}
         showDots={true}
         autoplay={true}
         autoplayInterval={5000}
       />
       <ServicesOverview
-        title="Mais Alguns de Nossos Serviços"
-        description="Excelência e dedicação em cada detalhe para manter seu carro sempre em perfeitas condições."
+        title="Delícias Sob Medida para Cada Ocasião"
+        description="Sabor, beleza e carinho em cada criação – porque sua comemoração merece o melhor."
         features={[
           {
             icon: (
-              <FaMicrochip className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+              <FaHeart className="h-8 w-8 text-pink-600 dark:text-pink-400" />
             ),
-            title: "Diagnóstico Computadorizado",
-            description:
-              "Identificação precisa de falhas eletrônicas e sistemas de injeção.",
+            title: "Bolos de Casamento",
+            description: "Obras-primas comestíveis para o seu grande dia.",
             details: (
               <>
                 <p className="mb-2 text-sm text-gray-700 dark:text-gray-300">
-                  Utilizamos scanner automotivo e tecnologia avançada para encontrar
-                  qualquer problema antes que ele se agrave.
+                  Designs exclusivos que combinam com o estilo da sua festa. Elegância e sabor em cada detalhe.
                 </p>
                 <ul className="list-inside list-disc text-sm text-gray-600 dark:text-gray-400">
-                  <li>Leitura de códigos de falha (ABS, injeção, sensores)</li>
-                  <li>Análise de luzes de advertência no painel</li>
-                  <li>Verificação de sensores e atuadores</li>
-                  <li>Relatório detalhado com orientações transparentes</li>
+                  <li>Criações clássicas e contemporâneas</li>
+                  <li>Personalização total do design</li>
+                  <li>Sabores harmonizados com recheios finos</li>
+                  <li>Entrega pontual e montagem no local</li>
                 </ul>
               </>
             ),
-            callToActionText: "Agendar Diagnóstico",
-            callToActionLink: "/p/servicos",
+            callToActionText: "Ver Bolos de Casamento",
+            callToActionLink: "/portfolio/casamentos",
           },
           {
             icon: (
-              <FaCarSide className="h-8 w-8 text-green-600 dark:text-green-400" />
+              <FaBirthdayCake className="h-8 w-8 text-yellow-600 dark:text-yellow-400" />
             ),
-            title: "Serviços de Ar Condicionado",
-            description:
-              "Conforto térmico garantido para enfrentar o trânsito e o calor de São Paulo.",
+            title: "Festas e Aniversários",
+            description: "Temas que ganham vida em forma de bolo e doces.",
             details: (
               <>
                 <p className="mb-2 text-sm text-gray-700 dark:text-gray-300">
-                  Fazemos manutenção completa do sistema de ar condicionado,
-                  garantindo desempenho, eliminação de odores e economia de combustível.
+                  Bolos decorados, cupcakes e doces personalizados para transformar qualquer festa em um espetáculo.
                 </p>
                 <ul className="list-inside list-disc text-sm text-gray-600 dark:text-gray-400">
-                  <li>Higienização do sistema de ventilação</li>
-                  <li>Recarga de gás refrigerante</li>
-                  <li>Verificação de compressor e válvulas</li>
-                  <li>Troca de filtro de cabine (antipólen)</li>
+                  <li>Aniversários infantis, teens e adultos</li>
+                  <li>Doces personalizados com o tema da festa</li>
+                  <li>Detalhes criativos e comestíveis</li>
+                  <li>Atendimento direto com a Dedá</li>
                 </ul>
               </>
             ),
-            callToActionText: "Ver Serviços de Ar Condicionado",
-            callToActionLink: "/p/servicos",
+            callToActionText: "Ver Festas e Aniversários",
+            callToActionLink: "/portfolio/aniversarios",
           },
           {
             icon: (
-              <FaWrench className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+              <FaBuilding className="h-8 w-8 text-blue-600 dark:text-blue-400" />
             ),
-            title: "Manutenção Geral e Injeção",
-            description:
-              "Cuidado completo para o coração do seu veículo, do motor à elétrica.",
+            title: "Eventos Corporativos",
+            description: "Sofisticação para encantar clientes e parceiros.",
             details: (
               <>
                 <p className="mb-2 text-sm text-gray-700 dark:text-gray-300">
-                  Do óleo ao sistema eletrônico, cuidamos de tudo para que seu
-                  carro funcione sempre como novo.
+                  Bolos com logotipo, lembranças gourmet e kits de doces que reforçam a identidade da sua marca.
                 </p>
                 <ul className="list-inside list-disc text-sm text-gray-600 dark:text-gray-400">
-                  <li>Troca de óleo e filtros (motor, ar, combustível)</li>
-                  <li>Limpeza e reparo de bicos injetores e sensores</li>
-                  <li>Verificação de sistema de arrefecimento e escapamento</li>
-                  <li>Check-list completo de componentes elétricos básicos</li>
+                  <li>Presente corporativo personalizado</li>
+                  <li>Bolos temáticos para eventos</li>
+                  <li>Doces finos com embalagens de marca</li>
+                  <li>Entrega estratégica em São Paulo</li>
                 </ul>
               </>
             ),
-            callToActionText: "Conhecer Manutenção",
-            callToActionLink: "/p/servicos",
+            callToActionText: "Ver Eventos Corporativos",
+            callToActionLink: "/portfolio/eventos",
           },
         ]}
         showGlobalCTA={true}
-        globalCTATitle="Pronto para dar cuidado profissional ao seu veículo?"
-        globalCTADescription="Com mais de 20 anos de experiência, Mario Fanucchi garante diagnóstico honesto, reparos de qualidade e atendimento personalizado."
-        globalCTAText="Agende Agora"
+        globalCTATitle="Vamos transformar sua celebração em uma doce lembrança?"
+        globalCTADescription="Com atendimento próximo, ingredientes nobres e design exclusivo, a Maravilhas da Dedá faz da sua comemoração uma experiência inesquecível."
+        globalCTAText="Fale com a Dedá"
         globalCTALink="/contato"
       />
       <AccordionFaq />

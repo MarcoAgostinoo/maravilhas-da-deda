@@ -92,3 +92,19 @@
 .swiper-pagination-bullet-active {
   background-color: #f97316;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+.signature,
+.font-script {
+  font-family: "Great Vibes", cursive;
+}

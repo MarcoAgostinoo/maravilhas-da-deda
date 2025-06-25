@@ -65,7 +65,7 @@ const ServicesOverview = ({
 
   return (
     <section
-      className="relative w-full overflow-hidden bg-gradient-to-br from-gray-50 to-gray-200 py-16 dark:from-gray-900 dark:to-gray-800"
+      className="relative w-full overflow-hidden bg-gradient-to-br from-ivory to-sage py-16 dark:from-chocolate dark:to-sage"
       aria-label="Visão Geral de Serviços"
     >
       {/* Background animado (mantido como estava) */}
@@ -84,7 +84,7 @@ const ServicesOverview = ({
               fx="50%"
               fy="50%"
             >
-              <stop offset="0%" stopColor="#81E6D9" />
+              <stop offset="0%" stopColor="#D4AF37" />
               <stop offset="100%" stopColor="transparent" />
             </radialGradient>
             <radialGradient
@@ -95,7 +95,7 @@ const ServicesOverview = ({
               fx="50%"
               fy="50%"
             >
-              <stop offset="0%" stopColor="#667EEA" />
+              <stop offset="0%" stopColor="#D8C0C0" />
               <stop offset="100%" stopColor="transparent" />
             </radialGradient>
           </defs>
@@ -135,10 +135,10 @@ const ServicesOverview = ({
           variants={itemVariants}
           className="mb-12 text-center"
         >
-          <h2 className="mb-4 text-3xl font-extrabold text-gray-900 md:text-4xl dark:text-white">
+          <h2 className="mb-4 text-3xl font-extrabold text-chocolate md:text-4xl dark:text-gold">
             {title}
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-gray-700 dark:text-gray-300">
+          <p className="mx-auto max-w-2xl text-lg text-chocolate dark:text-ivory">
             {description}
           </p>
         </motion.div>
@@ -156,10 +156,10 @@ const ServicesOverview = ({
               whileHover={
                 flippedCardIndex !== index
                   ? {
-                      y: -5,
-                      scale: 1.02,
-                      boxShadow: "0 10px 15px rgba(0,0,0,0.1)",
-                    }
+                    y: -5,
+                    scale: 1.02,
+                    boxShadow: "0 10px 15px rgba(0,0,0,0.1)",
+                  }
                   : {}
               }
               onClick={() => handleCardClick(index)} // O card inteiro continua virando ao ser clicado
@@ -213,9 +213,8 @@ const ServicesOverview = ({
                 transition={{ duration: 0.6, ease: "easeInOut" }}
                 style={{
                   backfaceVisibility: "hidden",
-                  transform: `rotateY(${
-                    flippedCardIndex === index ? 0 : -180
-                  }deg)`,
+                  transform: `rotateY(${flippedCardIndex === index ? 0 : -180
+                    }deg)`,
                 }}
               >
                 <div> {/* Mantido o layout original do verso */}

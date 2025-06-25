@@ -28,21 +28,20 @@ const BannerPages: React.FC<BannerPagesProps> = ({
       backgroundPosition: "center",
     }}
   >
-    <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-700/50 dark:from-gray-900/90 dark:to-gray-800/50" />
+    <div className="absolute inset-0 bg-gradient-to-r from-chocolate/90 to-sage/50 dark:from-chocolate/90 dark:to-sage/50" />
     <div className="relative z-10 container mx-auto px-4 py-12">
-      <h1 className="animate-slideInRight mb-4 text-5xl font-bold text-white md:text-6xl dark:text-gray-100">
+      <h1 className="animate-slideInRight mb-4 text-5xl font-bold text-ivory md:text-6xl dark:text-ivory">
         {title}
       </h1>
       <nav aria-label="breadcrumb">
-        <ol className="animate-slideInRight mb-0 flex flex-wrap space-x-2 text-lg text-white/80 dark:text-gray-200/80">
+        <ol className="animate-slideInRight mb-0 flex flex-wrap space-x-2 text-lg text-ivory/80 dark:text-ivory/80">
           {breadcrumbs.map((item, idx) => (
             <li
               key={idx}
-              className={`${
-                item.active
-                  ? "font-semibold text-white dark:text-gray-100"
-                  : "transition-colors hover:text-white dark:hover:text-gray-100"
-              }`}
+              className={`${item.active
+                  ? "font-semibold text-ivory dark:text-ivory"
+                  : "transition-colors hover:text-ivory dark:hover:text-ivory"
+                }`}
               aria-current={item.active ? "page" : undefined}
             >
               {item.href && !item.active ? (
@@ -51,7 +50,7 @@ const BannerPages: React.FC<BannerPagesProps> = ({
                 item.label
               )}
               {idx < breadcrumbs.length - 1 && (
-                <span className="mx-2 text-white/50 dark:text-gray-200/50">
+                <span className="mx-2 text-ivory/50 dark:text-ivory/50">
                   /
                 </span>
               )}

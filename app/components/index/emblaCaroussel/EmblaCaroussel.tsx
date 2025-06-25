@@ -113,20 +113,17 @@ const EmblaCarousel: React.FC<PropType> = ({
 
   return (
     <div
-      className="mt-16 w-full p-6"
+      className="mt-16 w-full p-6 bg-ivory dark:bg-chocolate"
       role="region"
       aria-roledescription="carousel"
       aria-label={title}
     >
       <div className="mb-8 text-center">
-        {/* Trocado para usar as cores da identidade visual (sugestão) */}
-        <p className="mb-2 text-lg" style={{ color: '#B2AC88' }}>{title}</p>
-        <h2 className="text-3xl font-bold" style={{ color: '#4A2C2A' }}>
-          {subtitle}
-        </h2>
+        <p className="mb-2 text-lg text-sage">{title}</p>
+        <h2 className="text-3xl font-bold text-chocolate dark:text-gold">{subtitle}</h2>
       </div>
-      <section className={`${styles.embla} p-6`}>
-        <div className={`${styles.embla__viewport}`} ref={emblaRef}>
+      <section className={styles.embla}>
+        <div className={styles.embla__viewport} ref={emblaRef}>
           <div className={styles.embla__container}>
             {slides.map((index) => (
               <div
@@ -140,11 +137,9 @@ const EmblaCarousel: React.FC<PropType> = ({
                   href={slideContent[index].url}
                   className={styles.embla__slide__link}
                 >
-                  <div className={`${styles.embla__slide__number}`}>
+                  <div className={styles.embla__slide__number}>
                     <Image
-                      // IMPORTANTE: As imagens devem ser nomeadas como caroucelEmbla1.png, caroucelEmbla2.jpg, etc.
-                      src={`/index/caroucelEmbla${index + 1}${imageExtensions[index]}`}
-                      // Texto alternativo melhorado para SEO e acessibilidade
+                      src={`/index/caroucelEmbla${index + 1}.png`}
                       alt={`Maravilhas da Dedá - ${slideContent[index].title}`}
                       className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
                       loading="lazy"
@@ -153,10 +148,8 @@ const EmblaCarousel: React.FC<PropType> = ({
                       width={800}
                       height={500}
                     />
-                    <div className={`${styles.embla__slide__overlay}`}>
-                      <h3
-                        className={`${styles.embla__slide__title} text-white`} // Cor ajustada para melhor contraste com o overlay
-                      >
+                    <div className={styles.embla__slide__overlay}>
+                      <h3 className={`${styles.embla__slide__title} text-white`}>
                         {slideContent[index].title}
                       </h3>
                       <p className={styles.embla__slide__description}>
@@ -169,7 +162,6 @@ const EmblaCarousel: React.FC<PropType> = ({
             ))}
           </div>
         </div>
-
         {showControls && (
           <div className={styles.embla__controls}>
             <div className={styles.embla__buttons}>
@@ -195,8 +187,3 @@ const EmblaCarousel: React.FC<PropType> = ({
 };
 
 export default EmblaCarousel;
-
-// NOTA: Certifique-se de que os nomes dos seus arquivos de imagem correspondem a este padrão.
-// Exemplo: /public/index/caroucelEmbla1.png, /public/index/caroucelEmbla2.jpg, etc.
-// O número de extensões deve corresponder ao número de itens no `slideContent`.
-const imageExtensions = ['.png', '.png', '.png', '.png', '.jpg', '.jpg', '.jpg'];

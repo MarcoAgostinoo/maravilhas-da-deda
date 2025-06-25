@@ -154,8 +154,8 @@ const PortfolioPage = () => {
     selectedCategory === "Todos"
       ? allRepairCases
       : allRepairCases.filter((repairCase) =>
-          repairCase.category.includes(selectedCategory),
-        );
+        repairCase.category.includes(selectedCategory),
+      );
 
   // Framer Motion Variants
   const containerVariants = {
@@ -181,7 +181,7 @@ const PortfolioPage = () => {
 
   return (
     <section
-      className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-200 py-16 dark:from-gray-900 dark:to-gray-800"
+      className="relative overflow-hidden bg-gradient-to-br from-ivory to-sage py-16 dark:from-chocolate dark:to-sage"
       aria-label="Portfólio de Casos de Sucesso da Garagem Oficina"
     >
       {/* Background animado (reutilizado do ServicesOverview) */}
@@ -200,7 +200,7 @@ const PortfolioPage = () => {
               fx="50%"
               fy="50%"
             >
-              <stop offset="0%" stopColor="#1E40AF" />
+              <stop offset="0%" stopColor="#D4AF37" />
               <stop offset="100%" stopColor="transparent" />
             </radialGradient>
             <radialGradient
@@ -211,7 +211,7 @@ const PortfolioPage = () => {
               fx="50%"
               fy="50%"
             >
-              <stop offset="0%" stopColor="#F97316" />
+              <stop offset="0%" stopColor="#D8C0C0" />
               <stop offset="100%" stopColor="transparent" />
             </radialGradient>
           </defs>
@@ -273,11 +273,10 @@ const PortfolioPage = () => {
               key={category}
               variants={itemVariants}
               onClick={() => setSelectedCategory(category)}
-              className={`px-5 py-2 font-medium transition-all duration-300 ${
-                selectedCategory === category
+              className={`px-5 py-2 font-medium transition-all duration-300 ${selectedCategory === category
                   ? "bg-blue-900 text-white shadow-md hover:bg-blue-800 dark:bg-blue-900 dark:hover:bg-blue-800"
                   : "bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600"
-              }`}
+                }`}
             >
               {category}
             </motion.button>
