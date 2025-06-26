@@ -17,6 +17,14 @@ import { useTheme } from "@/app/hooks/useTheme";
 import { HiSun, HiMoon } from "react-icons/hi";
 import Image from 'next/image';
 
+const NAV_LINKS = [
+  { href: "/", label: "Início" },
+  { href: "/p/sobre", label: "Sobre" },
+  { href: "/p/servicos", label: "Serviços" },
+  { href: "/p/portifolio", label: "Portifólio" },
+  { href: "/p/contato", label: "Contato" },
+];
+
 export function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const { theme, toggleTheme } = useTheme();
@@ -82,28 +90,29 @@ export function NavBar() {
         fluid
         className={`fixed z-50 h-20 w-full transition-all duration-300 ${isScrolled ? "top-0 bg-white/90 text-black shadow-lg backdrop-blur-sm dark:bg-gray-900/95 dark:shadow-gray-800/20" : "top-0 bg-transparent md:top-10 dark:bg-transparent"}`}
       >
-        <div className="container mx-auto flex flex-wrap items-center justify-between px-0 py-0">
-          <NavbarBrand as={Link} href="/" className="animate-on-scroll fade-in-up">
-            <span className={`flex items-center gap-2 bg-gradient-to-r ${isScrolled ? "from-rose-500 to-pink-500" : "from-white to-white"} bg-clip-text text-2xl font-bold text-transparent filter transition-all duration-300 hover:scale-105 hover:from-rose-600 hover:to-pink-600 dark:from-pink-400 dark:to-rose-300 dark:hover:from-pink-500 dark:hover:to-rose-400`}>
-              <Image src={theme === 'dark' ? '/logodark.png' : '/logo.png'} alt="Logo" width={70} height={70} className="object-contain" />
-              Maravilhas da Dedá
+        <div className="container mx-auto flex flex-wrap md:flex-nowrap items-center justify-between px-0 py-0 md:flex-row md:gap-4">
+          {/* Linha principal em md+ */}
+          <div className="hidden md:flex w-full items-center flex-nowrap gap-4">
+            <NavbarBrand as={Link} href="/" className="animate-on-scroll fade-in-up p-0 m-0">
+              <Image src={theme === 'dark' ? '/logodark.png' : '/logo.png'} alt="Logo" width={48} height={48} className="object-contain w-10 h-10 md:w-[70px] md:h-[70px]" />
+            </NavbarBrand>
+            <span className={`flex flex-nowrap items-center gap-2 bg-gradient-to-r ${isScrolled ? "from-rose-500 to-pink-500" : "from-white to-white"} bg-clip-text text-xs font-bold text-transparent filter transition-all duration-300 hover:scale-105 hover:from-rose-600 hover:to-pink-600 dark:from-pink-400 dark:to-rose-300 dark:hover:from-pink-500 dark:hover:to-rose-400`}>
+              <span className="whitespace-nowrap text-lg">Maravilhas da Dedá</span>
             </span>
-          </NavbarBrand>
-
-          <div className="flex items-center gap-3 lg:order-last">
-            {mounted && (
-              <button
-                onClick={toggleTheme}
-                className="rounded-full border-2 border-white bg-white/10 p-2 hover:scale-110 hover:bg-rose-100 focus:ring-2 focus:ring-pink-300 focus:outline-none dark:border-gray-300 dark:bg-gray-800/50 dark:hover:bg-gray-700 dark:focus:ring-pink-600"
-              >
-                {theme === "dark" ? (
-                  <HiSun className="h-5 w-5 text-yellow-400 dark:text-yellow-300" />
-                ) : (
-                  <HiMoon className="h-5 w-5 text-gray-800 dark:text-gray-200" />
-                )}
-              </button>
-            )}
-            <div className="hidden md:block">
+            <div className="flex flex-row items-center gap-8 lg:gap-16 ml-6">
+              {NAV_LINKS.map((item) => (
+                <NavItem
+                  key={item.href}
+                  href={item.href}
+                  isActive={pathname === item.href}
+                  isScrolled={isScrolled}
+                  onClick={closeMenu}
+                >
+                  {item.label}
+                </NavItem>
+              ))}
+            </div>
+            <div className="flex flex-nowrap items-center gap-3 ml-auto">
               <Link
                 href="https://wa.me/5511992948196?text=Olá! Gostaria de saber mais sobre os doces da Maravilhas da Dedá"
                 target="_blank"
@@ -113,32 +122,73 @@ export function NavBar() {
                 <FaWhatsapp className="text-2xl" />
                 <span className="font-semibold">WhatsApp</span>
               </Link>
+              {mounted && (
+                <button
+                  onClick={toggleTheme}
+                  className="rounded-full border-2 border-white bg-white/10 p-2 hover:scale-110 hover:bg-rose-100 focus:ring-2 focus:ring-pink-300 focus:outline-none dark:border-gray-300 dark:bg-gray-800/50 dark:hover:bg-gray-700 dark:focus:ring-pink-600"
+                >
+                  {theme === "dark" ? (
+                    <HiSun className="h-5 w-5 text-yellow-400 dark:text-yellow-300" />
+                  ) : (
+                    <HiMoon className="h-5 w-5 text-gray-800 dark:text-gray-200" />
+                  )}
+                </button>
+              )}
             </div>
-            <NavbarToggle
-              ref={toggleRef}
-              className={`border-2 transition-all hover:scale-110 lg:hidden ${isScrolled ? "border-gray-800 text-gray-800 dark:border-gray-200 dark:text-gray-200" : "border-white text-white dark:border-gray-200 dark:text-gray-200"}`}
-            />
           </div>
-
-          <NavbarCollapse className="lg:order-1 lg:flex">
-            <div className={`mt-6 flex flex-col space-y-0 p-4 lg:mt-0 lg:flex-row lg:items-center lg:space-y-0 lg:space-x-16 ${isScrolled ? "bg-white/90 lg:bg-transparent dark:bg-gray-900/95" : "bg-black/70 lg:bg-transparent"}`}>
-              <NavItem href="/" isActive={pathname === "/"} isScrolled={isScrolled} onClick={closeMenu}>Início</NavItem>
-              <NavItem href="/p/sobre" isActive={pathname === "/p/sobre"} isScrolled={isScrolled} onClick={closeMenu}>Sobre</NavItem>
-              <NavItem href="/p/servicos" isActive={pathname === "/p/servicos"} isScrolled={isScrolled} onClick={closeMenu}>Serviços</NavItem>
-              <NavItem href="/p/portifolio" isActive={pathname === "/p/portifolio"} isScrolled={isScrolled} onClick={closeMenu}>Portifólio</NavItem>
-              <NavItem href="/p/contato" isActive={pathname === "/p/contato"} isScrolled={isScrolled} onClick={closeMenu}>Contato</NavItem>
-              <div className="pt-2 lg:hidden">
-                <div className="md:block">
-                  <Link
-                    href="https://wa.me/5511992948196?text=Olá! Gostaria de saber mais sobre os doces da Maravilhas da Dedá"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-[#25D366] px-6 py-3 text-white shadow-lg hover:scale-105 hover:bg-[#1EBE57]"
-                  >
-                    <FaWhatsapp className="text-2xl" />
-                    <span className="font-semibold">WhatsApp</span>
-                  </Link>
-                </div>
+          {/* Mobile: logo, texto, tema, toggle na mesma linha; menu colapsável abaixo */}
+          <div className="flex w-full items-center justify-between flex-nowrap gap-1 md:hidden">
+            <div className="flex items-center flex-nowrap gap-1">
+              <NavbarBrand as={Link} href="/" className="animate-on-scroll fade-in-up p-0 m-0">
+                <Image src={theme === 'dark' ? '/logodark.png' : '/logo.png'} alt="Logo" width={48} height={48} className="object-contain w-10 h-10" />
+              </NavbarBrand>
+              <span className={`ml-2 flex flex-nowrap items-center gap-1 bg-gradient-to-r ${isScrolled ? "from-rose-500 to-pink-500" : "from-white to-white"} bg-clip-text text-xs font-bold text-transparent filter transition-all duration-300 hover:scale-105 hover:from-rose-600 hover:to-pink-600 dark:from-pink-400 dark:to-rose-300 dark:hover:from-pink-500 dark:hover:to-rose-400`}>
+                <span className="whitespace-nowrap text-sm">Maravilhas da Dedá</span>
+              </span>
+            </div>
+            <div className="flex flex-nowrap items-center gap-1 ml-auto">
+              {mounted && (
+                <button
+                  onClick={toggleTheme}
+                  className="rounded-full border-2 border-white bg-white/10 p-2 hover:scale-110 hover:bg-rose-100 focus:ring-2 focus:ring-pink-300 focus:outline-none dark:border-gray-300 dark:bg-gray-800/50 dark:hover:bg-gray-700 dark:focus:ring-pink-600"
+                >
+                  {theme === "dark" ? (
+                    <HiSun className="h-5 w-5 text-yellow-400 dark:text-yellow-300" />
+                  ) : (
+                    <HiMoon className="h-5 w-5 text-gray-800 dark:text-gray-200" />
+                  )}
+                </button>
+              )}
+              <NavbarToggle
+                ref={toggleRef}
+                className={`border-2 transition-all hover:scale-110 lg:hidden ${isScrolled ? "border-gray-800 text-gray-800 dark:border-gray-200 dark:text-gray-200" : "border-white text-white dark:border-gray-200 dark:text-gray-200"}`}
+              />
+            </div>
+          </div>
+          {/* Menu colapsável mobile */}
+          <NavbarCollapse className="md:hidden">
+            <div className={`mt-6 flex flex-col space-y-0 p-4 ${isScrolled ? "bg-white/90 dark:bg-gray-900/95" : "bg-black/70"}`}>
+              {NAV_LINKS.map((item) => (
+                <NavItem
+                  key={item.href}
+                  href={item.href}
+                  isActive={pathname === item.href}
+                  isScrolled={isScrolled}
+                  onClick={closeMenu}
+                >
+                  {item.label}
+                </NavItem>
+              ))}
+              <div className="pt-2">
+                <Link
+                  href="https://wa.me/5511992948196?text=Olá! Gostaria de saber mais sobre os doces da Maravilhas da Dedá"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-[#25D366] px-6 py-3 text-white shadow-lg hover:scale-105 hover:bg-[#1EBE57]"
+                >
+                  <FaWhatsapp className="text-2xl" />
+                  <span className="font-semibold">WhatsApp</span>
+                </Link>
               </div>
             </div>
           </NavbarCollapse>

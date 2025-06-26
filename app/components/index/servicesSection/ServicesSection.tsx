@@ -12,15 +12,15 @@ const services = [
     link: "/servicos/casamentos",
   },
   {
-    img: "/deda/aniversario-miniatura.jpg", // Ex: Close-up de um cupcake temático
-    img2: "/deda/aniversario-bolo-tematico.jpg", // Ex: Foto de um bolo de aniversário vibrante
+    img: "/ServicesSection/services3.jpeg", // Ex: Close-up de um cupcake temático
+    img2: "/ServicesSection/services4.jpeg", // Ex: Foto de um bolo de aniversário vibrante
     title: "Festas e Aniversários",
     desc: "Seja um aniversário infantil com o personagem favorito do seu filho ou uma celebração cheia de estilo, nós damos vida ao seu tema. Nossos bolos decorados, cupcakes e doces personalizados completam a festa.",
     link: "/servicos/festas-e-aniversarios",
   },
   {
-    img: "/deda/corporativo-miniatura.jpg", // Ex: Close-up de um doce com logo
-    img2: "/deda/corporativo-kit-doces.jpg", // Ex: Foto de um kit elegante de doces corporativos
+    img: "/ServicesSection/services4.jpg", // Ex: Close-up de um doce com logo
+    img2: "/ServicesSection/services4.jpg", // Ex: Foto de um kit elegante de doces corporativos
     title: "Eventos Corporativos",
     desc: "Surpreenda clientes e parceiros com um toque de sofisticação. Oferecemos kits de doces, bolos com o logo da sua empresa e lembranças personalizadas que fortalecem a imagem da sua marca.",
     link: "/servicos/corporativo",

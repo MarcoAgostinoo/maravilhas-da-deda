@@ -74,25 +74,25 @@ export function FooTer() {
         </div>
 
         {/* Links Rápidos */}
-        <nav>
-          <h4 className="mb-4 text-lg font-semibold tracking-wide uppercase">Links Rápidos</h4>
-          <ul className="space-y-2 text-sm">
-            <li>
+        <nav className="flex flex-col items-center md:items-start w-full">
+          <h4 className="mb-4 text-lg font-semibold tracking-wide uppercase text-center md:text-left w-full">Links Rápidos</h4>
+          <ul className="space-y-2 text-sm w-full flex flex-col items-center md:items-start">
+            <li className="w-full text-center md:text-left">
               <Link href="/p/sobre" className="transition-colors hover:text-pink-300 dark:hover:text-pink-400">
                 Sobre Nós
               </Link>
             </li>
-            <li>
+            <li className="w-full text-center md:text-left">
               <Link href="/p/portfolio" className="transition-colors hover:text-pink-300 dark:hover:text-pink-400">
                 Portfólio
               </Link>
             </li>
-            <li>
+            <li className="w-full text-center md:text-left">
               <Link href="/p/servicos" className="transition-colors hover:text-pink-300 dark:hover:text-pink-400">
                 Serviços
               </Link>
             </li>
-            <li>
+            <li className="w-full text-center md:text-left">
               <Link href="/p/contato" className="transition-colors hover:text-pink-300 dark:hover:text-pink-400">
                 Contato
               </Link>
