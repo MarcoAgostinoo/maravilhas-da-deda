@@ -1,38 +1,38 @@
 "use client";
 import {
-  FaAward,
-  FaTools,
-  FaHandshake,
-  FaCar,
-} from "react-icons/fa";
+  GiRibbonMedal,
+  GiCakeSlice,
+  GiPartyPopper,
+} from "react-icons/gi";
+import { BsEmojiHeartEyes } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import { ThemeProvider } from "flowbite-react";
 
 const facts = [
   {
     icon: (
-      <FaAward className="mb-4 text-4xl text-[#D4AF37] sm:text-5xl md:text-6xl" />
+      <GiRibbonMedal className="mb-4 text-4xl text-[#D4AF37] sm:text-5xl md:text-6xl" />
     ),
     value: 25,
     label: "Anos de Dedicação",
   },
   {
     icon: (
-      <FaTools className="mb-4 text-4xl text-[#D4AF37] sm:text-5xl md:text-6xl" />
+      <GiCakeSlice className="mb-4 text-4xl text-[#D4AF37] sm:text-5xl md:text-6xl" />
     ),
-    value: 10.000,
+    value: 10000,
     label: "Doces Criados",
   },
   {
     icon: (
-      <FaHandshake className="mb-4 text-4xl text-[#D4AF37] sm:text-5xl md:text-6xl" />
+      <BsEmojiHeartEyes className="mb-4 text-4xl text-[#D4AF37] sm:text-5xl md:text-6xl" />
     ),
     value: 1550,
     label: "Clientes Encantados",
   },
   {
     icon: (
-      <FaCar className="mb-4 text-4xl text-[#D4AF37] sm:text-5xl md:text-6xl" />
+      <GiPartyPopper className="mb-4 text-4xl text-[#D4AF37] sm:text-5xl md:text-6xl" />
     ),
     value: 20,
     label: "Eventos por Mês",

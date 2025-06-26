@@ -30,13 +30,13 @@ export function FooTer() {
         {/* Branding */}
         <div className="space-y-4">
           <h3 className="text-2xl font-bold tracking-wide">Maravilhas da Dedá</h3>
-          <p className="text-sm italic">"A doçura que transforma momentos em memórias"</p>
+          <p className="text-sm italic">&quot;A doçura que transforma momentos em memórias&quot;</p>
           <p className="text-xs text-gray-300 dark:text-gray-400">
             Confeitaria artesanal especializada em bolos personalizados e doces finos para casamentos, aniversários e eventos especiais. Feitos com amor, arte e ingredientes de alta qualidade.
           </p>
           <div className="flex items-center space-x-3">
             <a
-              href="https://wa.me/5511997032814"
+              href="https://wa.me/5511992948196"
               className="text-white transition-colors hover:text-pink-300 dark:hover:text-pink-400"
               aria-label="WhatsApp"
               target="_blank"
@@ -111,7 +111,7 @@ export function FooTer() {
           </div>
           <div className="flex items-center text-sm">
             <FaPhoneAlt className="mr-2 h-4 w-4 text-pink-300 dark:text-pink-400" />
-            <span className="text-gray-300 dark:text-gray-400">(11) 99703-2814</span>
+            <span className="text-gray-300 dark:text-gray-400">(11) 99294-8196</span>
           </div>
           <div className="flex items-center text-sm">
             <FaEnvelope className="mr-2 h-4 w-4 text-pink-300 dark:text-pink-400" />

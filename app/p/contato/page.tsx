@@ -241,7 +241,7 @@ const ContactPage = () => {
                     href="tel:+5511997032814"
                     className="text-gray-600 hover:underline dark:text-gray-400"
                   >
-                    +55 (11) 99703-2814
+                    +55 (11) 99294-8196
                   </a>
                 </div>
               </div>
@@ -276,7 +276,7 @@ const ContactPage = () => {
             </h3>
             <div className="flex space-x-4">
               <motion.a
-                href="https://www.facebook.com/mario.fanucchi.1"
+                href="https://www.facebook.com/andreia.aparecida.371517"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, color: "#0A66C2" }}

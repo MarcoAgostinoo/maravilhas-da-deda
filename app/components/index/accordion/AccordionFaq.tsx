@@ -90,7 +90,7 @@ export function AccordionFaq() {
               É simples! Você pode:
             </p>
             <ul className="list-disc list-inside text-chocolate dark:text-ivory">
-              <li>Enviar uma mensagem pelo WhatsApp: (11) 99703-2814</li>
+              <li>Enviar uma mensagem pelo WhatsApp: (11) 99294-8196</li>
               <li>Entrar em contato pelo e-mail: maravilhasdadeda@gmail.com</li>
               <li>Preencher o formulário na nossa página de contato</li>
             </ul>

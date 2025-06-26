@@ -22,8 +22,8 @@ export default function Sobre() {
             role: "Proprietário",
             image: "/index/about1.jpg",
             social: {
-              facebook: "https://www.facebook.com/mario.fanucchi.1",
-              instagram: "https://www.instagram.com/mario.fanucchi.1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
+              facebook: "https://www.facebook.com/andreia.aparecida.371517",
+              instagram: "https://www.instagram.com/maravilhas_da_deda/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
             },
           },
         ]}

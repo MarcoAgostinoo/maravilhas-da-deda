@@ -62,10 +62,10 @@ export function NavBar() {
               Siga-nos:
             </p>
             <div className="mt-3 ml-4 flex gap-4">
-              <Link href="https://www.instagram.com/mario.fanucchi.1" target="_blank" className="text-white hover:scale-110 hover:text-rose-100 dark:text-rose-100">
+              <Link href="https://www.instagram.com/maravilhas_da_deda/" target="_blank" className="text-white hover:scale-110 hover:text-rose-100 dark:text-rose-100">
                 <FaInstagram size={22} />
               </Link>
-              <Link href="https://www.facebook.com/mario.fanucchi.1" target="_blank" className="text-white hover:scale-110 hover:text-rose-100 dark:text-rose-100">
+              <Link href="https://www.facebook.com/andreia.aparecida.371517" target="_blank" className="text-white hover:scale-110 hover:text-rose-100 dark:text-rose-100">
                 <FaFacebook size={22} />
               </Link>
             </div>
@@ -73,7 +73,7 @@ export function NavBar() {
         </div>
         <div className="w-4/12 bg-gradient-to-r from-rose-800 to-rose-900 dark:from-rose-950 dark:to-rose-900">
           <p className="mt-2 ml-16 text-lg font-semibold tracking-wide text-white dark:text-rose-100">
-            Encomendas: (11) 99703-2814
+            Encomendas: (11) 99294-8196
           </p>
         </div>
       </div>
@@ -105,7 +105,7 @@ export function NavBar() {
             )}
             <div className="hidden md:block">
               <Link
-                href="https://wa.me/5511997032814?text=Olá! Gostaria de saber mais sobre os doces da Maravilhas da Dedá"
+                href="https://wa.me/5511992948196?text=Olá! Gostaria de saber mais sobre os doces da Maravilhas da Dedá"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-[#25D366] px-6 py-3 text-white shadow-lg hover:scale-105 hover:bg-[#1EBE57]"
@@ -130,7 +130,7 @@ export function NavBar() {
               <div className="pt-2 lg:hidden">
                 <div className="md:block">
                   <Link
-                    href="https://wa.me/5511997032814?text=Olá! Gostaria de saber mais sobre os doces da Maravilhas da Dedá"
+                    href="https://wa.me/5511992948196?text=Olá! Gostaria de saber mais sobre os doces da Maravilhas da Dedá"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 bg-[#25D366] px-6 py-3 text-white shadow-lg hover:scale-105 hover:bg-[#1EBE57]"
