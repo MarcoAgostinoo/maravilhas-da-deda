@@ -1,4 +1,3 @@
-
 "use client";
 
 import BannerPages from "@/app/components/bannerPages/BannerPages";
@@ -6,163 +5,81 @@ import BannerPages from "@/app/components/bannerPages/BannerPages";
 // import HeroServices from "@/app/components/services/heroServices/HeroServices";
 import ServicesList from "@/app/components/services/servicesList/ServicesList";
 import ServicesOverview from "@/app/components/services/servicesOverview/ServicesOverview";
-import { FaWrench, FaShieldAlt, FaTools } from "react-icons/fa"; // Remove FaCarSide if not used
 
 const services = [
   {
-    title: "Sistema de Suspensão",
-    description: "Conforto, estabilidade e segurança para sua direção.",
-    // **Atenção:** Troque essas imagens por fotos reais da Garagem Oficina!
-    image: "/servicos/Servicessuspecao2.jpeg",
+    title: "Bolos de Casamento/servicos1.jpg",
+    description:
+      "Designs elegantes, sabores memoráveis e detalhes artísticos para tornar seu grande dia inesquecível.",
+    image: "/servicos/servicos1.png", // Troque para uma imagem real se houver
     features: [
-      "Amortecedores e Molas",
-      "Pivôs e Bandejas",
-      "Buchas e Coxins",
-      "Geometria e Balanceamento",
+      "Modelagem artística e personalizada",
+      "Sabores sofisticados e exclusivos",
+      "Decoração com flores de açúcar e detalhes em dourado",
+      "Mesas de doces finos: brigadeiros gourmet, macarons, bem-casados",
     ],
   },
   {
-    title: "Sistema de Freios",
-    description: "Sua segurança é nossa prioridade máxima na frenagem.",
-    // **Atenção:** Troque essas imagens por fotos reais da Garagem Oficina!
-    image: "/servicos/ServicesFreio2.jpg",
+    title: "Festas e Aniversários",
+    description:
+      "Bolos temáticos, doces personalizados e kits festa que encantam todas as idades e estilos de comemoração.",
+    image: "/servicos/servicos2.jpeg",
     features: [
-      "Pastilhas e Discos",
-      "Lonas e Tambores",
-      "Fluido de Freio",
-      "Regulagens e Manutenção ABS",
+      "Bolos decorados com pasta americana e esculturas",
+      "Cupcakes, pirulitos de chocolate e brigadeiros",
+      "Kits festa: marmitinhas, bolos no pote, mini bolos",
+      "Opções para todos os temas e faixas etárias",
     ],
   },
   {
-    title: "Motor e Injeção Eletrônica",
-    description: "O coração do seu carro funcionando com máxima performance e economia.",
-    // **Atenção:** Troque essas imagens por fotos reais da Garagem Oficina!
-    image: "/servicos/Servicesmotor1.jpg",
+    title: "Eventos Corporativos",
+    description:
+      "Soluções sob medida para empresas: presentes, lembranças e bolos personalizados que impressionam.",
+    image: "/servicos/servicos3.jpeg",
     features: [
-      "Diagnóstico de Motor",
-      "Troca de Correias (Dentada/Acessórios)",
-      "Limpeza de Bicos Injetores",
-      "Reparo de Sensores e Atuadores",
+      "Bolos com logo da empresa",
+      "Kits de doces finos para eventos e datas comemorativas",
+      "Embalagens elegantes e personalizadas",
+      "Entrega pontual em toda São Paulo",
     ],
   },
   {
-    title: "Manutenção Automotiva Geral",
-    description: "Cuidamos de tudo para você rodar tranquilo e com segurança.",
-    // **Atenção:** Troque essas imagens por fotos reais da Garagem Oficina!
-    image: "/servicos/Servicesmotor2.jpg",
+    title: "Bolos no Pote & Especiais",
+    description:
+      "Sabores irresistíveis em porções individuais, perfeitos para presentear ou adoçar o dia a dia.",
+    image: "/servicos/servicos4.jpg",
     features: [
-      "Troca de Óleo e Filtros",
-      "Revisão Preventiva (Check-up)",
-      "Sistema de Arrefecimento",
-      "Verificação de Fluidos e Lubrificantes",
-    ],
-  },
-  {
-    title: "Diagnóstico Computadorizado",
-    description: "Precisão tecnológica para identificar e solucionar falhas rapidamente.",
-    // **Atenção:** Troque essas imagens por fotos reais da Garagem Oficina!
-    image: "/servicos/computadorizado.jpg",
-    features: [
-      "Leitura de Códigos de Falha",
-      "Análise de Desempenho do Motor",
-      "Identificação de Problemas Elétricos",
-      "Otimização de Consumo",
+      "Sabores: sensação, doce de leite com abacaxi, ninho com frutas vermelhas",
+      "Bolos de cenoura com chocolate, cheesecake de frutas vermelhas",
+      "Pudim tradicional tamanho grande",
+      "Brigadeiros gourmet: morango, ninho, chocolate",
     ],
   },
 ];
 
 export default function Servicos() {
   return (
-    <div>
+    <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-[#F5F5DC] to-[#B2AC88] dark:from-[#4A2C2A] dark:to-[#B2AC88]">
       <BannerPages
-        title="Nossos Serviços"
+        title="Serviços, Doces Inesquecíveis"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Serviços", active: true },
         ]}
       />
       <ServicesList
-        title="O Que Oferecemos"
-        subtitle="Soluções Completas e Confiáveis para o Seu Veículo"
+        title="O Que Fazemos"
+        subtitle="Confeitaria artística para celebrações únicas. Cada doce é uma obra-prima criada com carinho, sofisticação e atenção aos detalhes."
         services={services}
       />
       <ServicesOverview
-        title="Nossas Especialidades e Diferenciais"
-        description="Na Garagem Oficina, a paixão pela mecânica encontra a excelência no serviço. Conheça as áreas onde a experiência de Mario Fanucchi faz a diferença."
-        features={[
-          {
-            icon: (
-              <FaWrench className="h-8 w-8 text-blue-600 dark:text-blue-400" />
-            ),
-            title: "Diagnóstico Preciso e Motor",
-            description:
-              "A expertise de mais de 20 anos para identificar e solucionar qualquer problema no coração do seu carro.",
-            details: (
-              <>
-                <p className="mb-2 text-sm text-gray-700 dark:text-gray-300">
-                  Com o conhecimento aprofundado de Mario Fanucchi, seu motor estará sempre em perfeito estado.
-                </p>
-                <ul className="list-inside list-disc text-sm text-gray-600 dark:text-gray-400">
-                  <li>Diagnóstico Eletrônico Avançado</li>
-                  <li>Reparo e Retífica de Motor</li>
-                  <li>Otimização de Injeção Eletrônica</li>
-                  <li>Troca de Correias e Fluidos Essenciais</li>
-                </ul>
-              </>
-            ),
-            callToActionText: "Agende seu Diagnóstico",
-            callToActionLink: "/p/contato",
-          },
-          {
-            icon: (
-              <FaShieldAlt className="h-8 w-8 text-green-600 dark:text-green-400" />
-            ),
-            title: "Segurança e Estabilidade",
-            description:
-              "Seus sistemas de freio e suspensão em dia para uma direção segura e confortável em São Paulo.",
-            details: (
-              <>
-                <p className="mb-2 text-sm text-gray-700 dark:text-gray-300">
-                  Dirija com tranquilidade sabendo que seu veículo está preparado para qualquer situação.
-                </p>
-                <ul className="list-inside list-disc text-sm text-gray-600 dark:text-gray-400">
-                  <li>Revisão Completa de Freios (ABS e Convencional)</li>
-                  <li>Manutenção de Amortecedores e Molas</li>
-                  <li>Reparo de Componentes da Suspensão</li>
-                  <li>Alinhamento e Balanceamento</li>
-                </ul>
-              </>
-            ),
-            callToActionText: "Garanta Sua Segurança",
-            callToActionLink: "/p/contato",
-          },
-          {
-            icon: (
-              <FaTools className="h-8 w-8 text-purple-600 dark:text-purple-400" />
-            ),
-            title: "Manutenção Preventiva e Geral",
-            description: "Pequenos cuidados que garantem a longevidade e o bom desempenho do seu veículo.",
-            details: (
-              <>
-                <p className="mb-2 text-sm text-gray-700 dark:text-gray-300">
-                  Invista na saúde do seu carro com revisões periódicas e serviços de manutenção completa.
-                </p>
-                <ul className="list-inside list-disc text-sm text-gray-600 dark:text-gray-400">
-                  <li>Troca de Óleo e Filtros</li>
-                  <li>Check-up de Viagem e Férias</li>
-                  <li>Verificação de Fluidos e Vazamentos</li>
-                  <li>Pequenos Reparos Elétricos</li>
-                </ul>
-              </>
-            ),
-            callToActionText: "Cuide do Seu Carro",
-            callToActionLink: "/p/contato",
-          },
-        ]}
+        title="Por que escolher a Maravilhas da Dedá?"
+        description="Unimos técnica, criatividade e ingredientes selecionados para criar doces que são o coração da sua celebração. Atendimento personalizado, arte em cada detalhe e sabores que encantam."
+        features={[]}
         showGlobalCTA={true}
-        globalCTATitle="Pronto para o Cuidado que Seu Carro Merece?"
-        globalCTADescription="Entre em contato com Mario Fanucchi e agende o serviço que seu veículo precisa. Qualidade e confiança garantidas."
-        globalCTAText="Fale Conosco Agora!"
+        globalCTATitle="Vamos adoçar sua próxima celebração?"
+        globalCTADescription="Entre em contato e descubra como transformar seu evento em uma doce memória inesquecível."
+        globalCTAText="Solicite um Orçamento"
         globalCTALink="/p/contato"
       />
     </div>

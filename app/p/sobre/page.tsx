@@ -5,7 +5,7 @@ import Team from "@/app/components/sobre/team/Team";
 
 export default function Sobre() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mb-20 pb-10 ">
       <BannerPages
         title="Sobre Nós"
         breadcrumbs={[
@@ -18,9 +18,9 @@ export default function Sobre() {
       <Team
         members={[
           {
-            name: "Mario Fanucchi",
+            name: "Andreia Miguel",
             role: "Proprietário",
-            image: "/index/about1.jpg",
+            image: "/sobre/andreia.jpg",
             social: {
               facebook: "https://www.facebook.com/andreia.aparecida.371517",
               instagram: "https://www.instagram.com/maravilhas_da_deda/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",

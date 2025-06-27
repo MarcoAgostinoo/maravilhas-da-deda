@@ -22,7 +22,7 @@ const ServicesList: React.FC<ServicesListProps> = ({
   services,
   className = "",
 }) => (
-  <section className={`w-full bg-gray-50 py-12 dark:bg-gray-900 ${className}`}>
+  <section className={`w-full bg-gradient-to-br from-[#F5F5DC] to-[#B2AC88] dark:from-[#4A2C2A] dark:to-[#B2AC88] ${className}`}>
     <div className="container mx-auto px-4">
       <div className="mx-auto mb-12 max-w-xl text-center">
         <p className="animate-on-scroll fade-in-down mb-2 font-medium tracking-widest text-blue-600 uppercase dark:text-blue-400">

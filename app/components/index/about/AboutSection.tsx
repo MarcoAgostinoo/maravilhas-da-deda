@@ -112,7 +112,7 @@ const AboutSection = () => {
 
                 <div className="w-full px-2 sm:w-1/2">
                   <a
-                    href="https://wa.me/5511997032814"
+                    href="https://wa.me/5511992948196"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -125,7 +125,7 @@ const AboutSection = () => {
                           WhatsApp
                         </p>
                         <h5 className="mb-0 text-md font-bold text-chocolate dark:text-ivory">
-                          (11) 9 9703-2814
+                          (11) 9 99294-8196
                         </h5>
                       </div>
                     </div>

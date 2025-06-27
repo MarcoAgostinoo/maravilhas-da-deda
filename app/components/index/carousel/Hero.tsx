@@ -24,7 +24,7 @@ const slides = [
     buttons: [
       {
         text: "Fazer seu pedido",
-        href: "https://wa.me/5511997032814?text=Olá! Gostaria de fazer um orçamento para doces e bolos personalizados.",
+        href: "https://wa.me/5511992948196?text=Olá! Gostaria de fazer um orçamento para doces e bolos personalizados.",
         className:
           "flex items-center justify-center border border-yellow-400 px-5 py-2.5 text-sm font-medium text-yellow-400 shadow-lg hover:bg-yellow-400 hover:text-white hover:shadow-yellow-400/30 focus:ring-4 focus:ring-yellow-300 focus:outline-none",
       },

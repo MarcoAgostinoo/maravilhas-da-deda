@@ -227,7 +227,7 @@ const ContactPage = () => {
                     href="mailto:mario.fanucchi@hotmail.com"
                     className="text-gray-600 hover:underline dark:text-gray-400"
                   >
-                    mario.fanucchi@hotmail.com
+                    maravilhasdadeda@gmail.com
                   </a>
                 </div>
               </div>
@@ -238,7 +238,7 @@ const ContactPage = () => {
                     Telefone
                   </p>
                   <a
-                    href="tel:+5511997032814"
+                    href="tel:+5511992948196"
                     className="text-gray-600 hover:underline dark:text-gray-400"
                   >
                     +55 (11) 99294-8196
@@ -252,8 +252,8 @@ const ContactPage = () => {
                     Endereço
                   </p>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Rua Fonseca Galvão, nº 55 <br /> Vila Mariana <br />
-                    São Paulo - SP
+                    Rua Dirce, nº 130 <br /> Estância Guatambu <br />
+                    Itaquaquecetuba  - SP
                   </p>
                 </div>
               </div>
@@ -472,7 +472,7 @@ const ContactPage = () => {
           </h2>
           <div className="relative h-96 overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.6770125080498!2d-46.62362282542125!3d-23.580040962277316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5962e9d22e95%3A0x5730ab03f301ac54!2sR.%20Fonseca%20Galv%C3%A3o%2C%2055%20-%20Jardim%20da%20Gloria%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001547-130!5e0!3m2!1spt-BR!2sbr!4v1749025510793!5m2!1spt-BR!2sbr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.518652834921!2d-46.31457687397267!3d-23.441749057210103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7c4ebc17da15%3A0x4562eb5efa17519f!2sR.%20Dirce%20-%20Est%C3%A2ncia%20Guatambu%2C%20Itaquaquecetuba%20-%20SP%2C%2008588-720!5e0!3m2!1spt-BR!2sbr!4v1751011168070!5m2!1spt-BR!2sbr"
               width="100%"
               height="100%"
               style={{ border: 0 }}

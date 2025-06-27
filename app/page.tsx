@@ -22,7 +22,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-800">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-[#F5F5DC] to-[#B2AC88] dark:from-[#4A2C2A] dark:to-[#B2AC88]">
       <Hero />
       <AboutSection />
       <FactsSection />

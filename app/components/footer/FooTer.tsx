@@ -106,7 +106,7 @@ export function FooTer() {
           <div className="flex items-center text-sm">
             <FaMapMarkerAlt className="mr-2 h-4 w-4 text-pink-300 dark:text-pink-400" />
             <span className="text-gray-300 dark:text-gray-400">
-              Rua Fonseca Galvão, nº 55 – Vila Mariana, São Paulo – SP
+              Rua Dirce, nº 130 – Estância Guatambu, Itaquaquecetuba  – SP
             </span>
           </div>
           <div className="flex items-center text-sm">
