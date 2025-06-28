@@ -9,7 +9,7 @@ export default function HeroSobre() {
           // Sugestão: Usar uma imagem de fundo sutil, como uma textura de mármore ou linho claro.
           // O logo pode ser aplicado em outro lugar para não poluir o fundo.
           // backgroundImage: "url(/caminho/para/textura-fundo.jpg)",
-          backgroundColor: "#F5F5DC", // Usando o Bege Marfim da paleta
+          backgroundImage: "url(/sobreBackground.gif)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

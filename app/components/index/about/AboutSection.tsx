@@ -48,7 +48,7 @@ const AboutSection = () => {
 
               <div className="mb-4 flex items-center">
                 <div className="animate-on-scroll scale-in hover-shadow flex-shrink-0 bg-chocolate p-8 transition-all dark:bg-chocolate border-4 border-gold">
-                  <h1 className="text-7xl font-bold text-gold">+10</h1>
+                  <h1 className="text-7xl font-bold text-gold">+20</h1>
                   <h5 className="text-xl font-bold text-gold">Anos de</h5>
                   <h5 className="font-bold text-gold">Experiência</h5>
                 </div>

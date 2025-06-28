@@ -30,7 +30,7 @@ export default function Features() {
           {/* Imagem */}
           <div className="relative flex w-full items-center justify-center lg:w-1/2">
             <Image
-              src="/services1.jpg"
+              src="/sobreBackground.gif"
               alt="Andreia 'Dedá', confeiteira da Maravilhas da Dedá, finalizando a decoração de um bolo."
               width={600}
               height={400}

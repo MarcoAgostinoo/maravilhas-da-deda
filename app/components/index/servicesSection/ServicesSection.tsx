@@ -19,8 +19,8 @@ const services = [
     link: "/servicos/festas-e-aniversarios",
   },
   {
-    img: "/ServicesSection/services4.jpg", // Ex: Close-up de um doce com logo
-    img2: "/ServicesSection/services4.jpg", // Ex: Foto de um kit elegante de doces corporativos
+    img: "/ServicesSection/services5.jpg", // Ex: Close-up de um doce com logo
+    img2: "/ServicesSection/services6.jpg", // Ex: Foto de um kit elegante de doces corporativos
     title: "Eventos Corporativos",
     desc: "Surpreenda clientes e parceiros com um toque de sofisticação. Oferecemos kits de doces, bolos com o logo da sua empresa e lembranças personalizadas que fortalecem a imagem da sua marca.",
     link: "/servicos/corporativo",

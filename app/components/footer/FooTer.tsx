@@ -16,7 +16,7 @@ export function FooTer() {
       {/* Imagem de fundo ocupando toda a área do footer */}
       <div className="absolute inset-0 w-full h-full">
         <Image
-          src="/logo2.png"
+          src="/logo.png"
           alt="Logo de Fundo"
           fill
           className="object-cover opacity-20 dark:opacity-10"
