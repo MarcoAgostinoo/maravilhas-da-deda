@@ -23,37 +23,37 @@ const slideContent = [
   {
     title: "Bolos de Casamento: A Obra-Prima do seu Grande Dia",
     description: "Designs elegantes e sabores memoráveis que harmonizam com sua celebração. Cada bolo é uma joia comestível, criada para ser o centro das atenções.",
-    url: "/p/servicos/casamentos",
+    url: "/p/portifolio",
   },
   {
     title: "Festas e Aniversários Temáticos",
     description: "Damos vida à sua comemoração! Bolos e doces personalizados que transformam o tema da sua festa em uma deliciosa realidade.",
-    url: "/p/servicos/aniversarios",
+    url: "/p/portifolio",
   },
   {
     title: "Bolo no Pote: Felicidade em Camadas",
-    description: "Uma dose individual de carinho. Sabores como Ninho com Frutas Vermelhas e Chocolate Belga para adoçar qualquer momento.",
-    url: "/p/produtos/bolo-no-pote",
+    description: "Uma dose individual de carinho. Sabores como Ninho com Frutas Vermelhas e Chocolate para adoçar qualquer momento.",
+    url: "/p/portifolio",
   },
   {
     title: "Kit Festa: Celebração Prática e Deliciosa",
     description: "A solução completa para sua festa. Combinação perfeita de bolo e brigadeiros gourmet para celebrar sem preocupações.",
-    url: "/p/produtos/kit-festa",
+    url: "/p/portifolio",
   },
   {
     title: "Cheesecake de Frutas Vermelhas",
     description: "A combinação perfeita do aveludado do cream cheese com o frescor das frutas. Uma sobremesa sofisticada que encanta a todos.",
-    url: "/p/produtos/cheesecake",
+    url: "/p/portifolio",
   },
   {
     title: "Eventos Corporativos com Sofisticação",
     description: "Impressione clientes e colaboradores com doces finos e presentes personalizados que fortalecem a imagem da sua marca.",
-    url: "/p/servicos/corporativo",
+    url: "/p/portifolio",
   },
   {
-    title: "Bolo de Cenoura com Cobertura de Chocolate Belga",
+    title: "Bolo de Cenoura com Cobertura de Chocolate",
     description: "O clássico afetivo com um toque gourmet. Massa fofinha e uma cobertura generosa para um café da tarde inesquecível.",
-    url: "/p/produtos/bolos-caseiros",
+    url: "/p/portifolio",
   },
 ];
 
@@ -113,7 +113,7 @@ const EmblaCarousel: React.FC<PropType> = ({
 
   return (
     <div
-      className="mt-16 w-full p-6 bg-ivory dark:bg-chocolate"
+      className="mt-16 w-full p-6"
       role="region"
       aria-roledescription="carousel"
       aria-label={title}
@@ -149,7 +149,7 @@ const EmblaCarousel: React.FC<PropType> = ({
                       height={500}
                     />
                     <div className={styles.embla__slide__overlay}>
-                      <h3 className={`${styles.embla__slide__title} text-white`}>
+                      <h3 className={`${styles.embla__slide__title} text-black`}>
                         {slideContent[index].title}
                       </h3>
                       <p className={styles.embla__slide__description}>

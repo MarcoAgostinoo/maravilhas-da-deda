@@ -23,8 +23,6 @@
 
 .embla__viewport {
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  background: white;
 }
 
 .embla__button {
@@ -33,23 +31,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .embla__viewport {
-    background: rgb(31, 41, 55);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  }
 
   .embla__button {
     background-color: rgb(31, 41, 55);
     color: rgb(147, 197, 253);
-  }
-
-  .embla__dot:after {
-    background: rgb(75, 85, 99);
-  }
-
-  .embla__dot--selected:after {
-    background: rgb(147, 197, 253);
-    box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.3);
   }
 }
 
@@ -76,7 +61,6 @@
   padding: 10px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
 
@@ -103,10 +87,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(30, 58, 138, 0.85);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: rgba(30, 58, 138, 0.85);
   align-items: center;
   padding: 2rem;
   opacity: 0;
@@ -125,15 +109,23 @@
   text-align: center;
   transform: translateY(20px);
   transition: transform 0.3s ease;
+  text-shadow:
+    0 0 3px rgba(0, 0, 0, 0.8),
+    0 0 6px rgba(0, 0, 0, 0.6),
+    0 0 9px rgba(0, 0, 0, 0.4);
 }
 
 .embla__slide__description {
-  color: white;
+  color:  white;
   font-size: 1rem;
   text-align: center;
   line-height: 1.5;
   transform: translateY(20px);
   transition: transform 0.3s ease;
+  text-shadow:
+    0 0 2px rgba(0, 0, 0, 0.8),
+    0 0 4px rgba(0, 0, 0, 0.6),
+    0 0 6px rgba(0, 0, 0, 0.4);
 }
 
 .embla__slide__number:hover .embla__slide__title,
@@ -221,7 +213,6 @@
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
   appearance: none;
-  background-color: transparent;
   touch-action: manipulation;
   display: inline-flex;
   text-decoration: none;
@@ -238,7 +229,6 @@
 }
 
 .embla__dot:after {
-  background: #e0e0e0;
   width: 1rem;
   height: 1rem;
   display: flex;
@@ -248,14 +238,12 @@
 }
 
 .embla__dot:hover:after {
-  background: rgb(249, 115, 22);
   transform: scale(1.2);
 }
 
 .embla__dot--selected:after {
   background: rgb(30, 58, 138);
   transform: scale(1.2);
-  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
 }
 
 .embla__slide__link {
