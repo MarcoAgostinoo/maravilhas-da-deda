@@ -97,14 +97,13 @@ export function Hero() {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="relative h-full w-full">
-              {/* Inside the SwiperSlide component, update the text content section: */}
               <div className="relative z-10">
-                <div className={`animate-initial px-8 ${slide.pt} text-left md:px-16 lg:px-24`}>
-                  <p className="fade-in-right mb-2 text-sm font-bold text-orange-500 dark:text-orange-400 uppercase drop-shadow-[0_4px_3px_rgba(0,0,0,0.4)] delay-100 md:text-base">
+                <div className={`animate-initial px-8 ${slide.pt} text-left md:px-16 lg:px-24 mt-20`}>
+                  <p className="fade-in-right mb-2 lg:mb-8 text-sm font-bold bg-orange-200 text-orange-500 dark:text-orange-400 uppercase drop-shadow-[0_4px_3px_rgba(0,0,0,0.4)] delay-100 md:text-base inline-block px-2 py-0.5 rounded-full">
                     {slide.tagline}
                   </p>
                   <h2 className="fade-in-up mb-4 text-4xl font-black text-white dark:text-gray-100 drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)] delay-200 md:text-5xl lg:text-6xl">
-                    <span className="font-black text-orange-400 dark:text-orange-300 drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">{slide.title}</span>
+                    <span className="font-black text-orange-400  dark:text-orange-300 drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">{slide.title}</span>
                     <br />
                     <span className="font-black text-white-500 mt-20 dark:text-orange-300 drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">{slide.subtitle}</span>
                   </h2>

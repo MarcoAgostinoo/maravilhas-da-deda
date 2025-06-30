@@ -19,7 +19,7 @@ export default function HeroSobre() {
           <Image
             className="hidden h-full w-full object-contain lg:translate-x-[400px] md:block"
             // IMPORTANTE: Substitua esta imagem por uma foto profissional da Andreia 'Dedá' em ação.
-            src="/services2.jpeg" // Exemplo de nome de arquivo
+            src="/services2.png" // Exemplo de nome de arquivo
             alt="Andreia 'Dedá', confeiteira da Maravilhas da Dedá, finalizando a decoração de um bolo."
             fill
             sizes="(max-width: 768px) 100vw, 50vw"

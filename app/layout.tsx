@@ -9,9 +9,9 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Maravilhas da Deda",
+  title: "Maravilhas da Dedá | Confeitaria Artística para Celebrações Inesquecíveis em São Paulo",
   description:
-    "A Maravilhas da Deda realiza serviços automotivos de alta qualidade, desde manutenções preventivas até reparos complexos, garantindo segurança e desempenho do seu veículo. Agende sua visita.",
+    "Maravilhas da Dedá: bolos e doces artísticos que transformam sua festa em uma obra-prima. Confeitaria personalizada para casamentos, aniversários e eventos corporativos em São Paulo. Agende sua degustação!",
 };
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               try {
-                if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                if (localStorage.theme === 'dark') {
                   document.documentElement.classList.add('dark')
                 } else {
                   document.documentElement.classList.remove('dark')
