@@ -30,7 +30,7 @@ const allPortfolioItems: PortfolioItem[] = [
     id: "1",
     name: "Bolo de Casamento Clássico com Flores de Açúcar",
     category: ["Bolos de Casamento", "Obra-prima"],
-    image: "/servicos/servicos1.png",
+    image: "/portifolio/portifolio1.png",
     description: "Design elegante, flores modeladas à mão e sabor marcante. O centro das atenções do grande dia.",
     fullDescription:
       "Este bolo de casamento foi criado para um casal apaixonado por detalhes clássicos. Massa branca aveludada, recheio de ninho com chocolate e decoração com flores de açúcar feitas artesanalmente. Cada camada foi pensada para harmonizar com a celebração, tornando o momento ainda mais inesquecível.",
@@ -45,7 +45,7 @@ const allPortfolioItems: PortfolioItem[] = [
     id: "2",
     name: "Kit Festa: Bolo + Marmitinhas e Brigadeiros",
     category: ["Festas e Aniversários", "Kit Festa"],
-    image: "/servicos/servicos2.jpeg",
+    image: "/portifolio/portifolio2.png",
     description: "Kit completo para comemorações: bolo de 1,5kg, marmitinhas e brigadeiros artesanais.",
     fullDescription:
       "Ideal para festas práticas e deliciosas! O kit inclui um bolo de massa branca com dois recheios à escolha, 30 marmitinhas de 250g (bolo + 3 brigadeiros) e brigadeiros gourmet de morango e ninho. Perfeito para aniversários e celebrações em família.",
@@ -60,7 +60,7 @@ const allPortfolioItems: PortfolioItem[] = [
     id: "3",
     name: "Bolo no Pote: Sensação, Doce de Leite com Abacaxi e Ninho com Frutas Vermelhas",
     category: ["Bolos no Pote", "Sabores Especiais"],
-    image: "/servicessection/services2.jpeg",
+    image: "/portifolio/portifolio3.png",
     description: "Sabores irresistíveis em porções individuais, perfeitos para presentear ou saborear.",
     fullDescription:
       "Os bolos no pote são um sucesso entre os clientes! Massa fofinha, recheios cremosos e frutas frescas. Disponíveis nos sabores sensação, doce de leite com abacaxi e ninho com frutas vermelhas. Uma explosão de sabor em cada colherada.",
@@ -73,24 +73,24 @@ const allPortfolioItems: PortfolioItem[] = [
   },
   {
     id: "4",
-    name: "Bolo de Aniversário 2 Andares: Morango, Chocolate e Ninho",
-    category: ["Festas e Aniversários", "Bolos de Aniversário"],
-    image: "/servicos/servicos3.jpeg",
-    description: "Dois andares, três recheios e decoração artística. O bolo que encanta todas as idades.",
+    name: "Torta Charlot de Frutas Vermelhas",
+    category: ["Confeitaria Fina", "Tortas Especiais"],
+    image: "/portifolio/portifolio4.png",
+    description: "Elegância francesa em forma de sobremesa: leve, delicada e irresistível.",
     fullDescription:
-      "Para um aniversário inesquecível, criamos este bolo de dois andares com massas de chocolate e branca, recheios de morango, chocolate e ninho. A decoração foi inspirada no tema da festa, com detalhes em pasta americana e toques de dourado.",
+      "A Torta Charlot é uma sobremesa clássica da confeitaria francesa, feita com camadas de biscoito champanhe, mousse leve de baunilha e um recheio generoso de frutas vermelhas frescas. Finalizada com decoração delicada e laço de fita, ela é perfeita para ocasiões especiais que pedem sofisticação e sabor marcante.",
     highlights: [
-      "Dois andares",
-      "Três tipos de recheio",
-      "Decoração artística",
-      "Toques de dourado",
+      "Mousse leve de baunilha",
+      "Frutas vermelhas frescas",
+      "Biscoito champanhe",
+      "Apresentação elegante com laço",
     ],
-  },
+  },  
   {
     id: "5",
     name: "Pudim Tradicional Tamanho Família",
     category: ["Doces Clássicos", "Sobremesas"],
-    image: "/servicessection/services4.jpeg",
+    image: "/portifolio/portifolio5.jpeg",
     description: "Receita tradicional, textura perfeita e calda dourada. Um clássico para qualquer ocasião.",
     fullDescription:
       "O pudim tradicional da Maravilhas da Dedá é feito com ingredientes selecionados, garantindo textura aveludada e sabor marcante. A calda dourada e brilhante é o toque final para uma sobremesa que agrada a todos.",
@@ -105,7 +105,7 @@ const allPortfolioItems: PortfolioItem[] = [
     id: "6",
     name: "Cheesecake com Gelatina de Frutas Vermelhas",
     category: ["Sobremesas", "Cheesecake"],
-    image: "/servicessection/services3.jpeg",
+    image: "/portifolio/portifolio6.png",
     description: "Base crocante, creme leve e cobertura de frutas vermelhas frescas.",
     fullDescription:
       "Nossa cheesecake é feita com base crocante de biscoito, creme suave e cobertura de gelatina de frutas vermelhas. Uma sobremesa sofisticada, perfeita para eventos especiais e para quem busca um sabor marcante e delicado.",
@@ -120,7 +120,7 @@ const allPortfolioItems: PortfolioItem[] = [
     id: "7",
     name: "Bolo de Cenoura com Chocolate",
     category: ["Bolos Clássicos", "Café da Tarde"],
-    image: "/servicessection/services5.jpg",
+    image: "/portifolio/portifolio7.jpeg",
     description: "Clássico do café da tarde, com cobertura generosa de chocolate.",
     fullDescription:
       "O bolo de cenoura da Dedá é famoso pela massa macia e cobertura farta de chocolate. Ideal para acompanhar um café ou chá, traz aquele sabor de infância e aconchego em cada fatia.",

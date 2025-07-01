@@ -83,7 +83,7 @@ export function FooTer() {
               </Link>
             </li>
             <li className="w-full text-center md:text-left">
-              <Link href="/p/portfolio" className="transition-colors hover:text-pink-300 dark:hover:text-pink-400">
+              <Link href="/p/portifolio" className="transition-colors hover:text-pink-300 dark:hover:text-pink-400">
                 Portfólio
               </Link>
             </li>
