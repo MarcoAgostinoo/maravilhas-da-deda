@@ -31,7 +31,7 @@ const slides = [
     ],
   },
   {
-    image: "/hero2.jpg", // Imagem de bolos de casamento ou doces finos
+    image: "/hero2.png", // Imagem de bolos de casamento ou doces finos
     alt: "Bolos de casamento",
     pt: "pt-[120px]",
     title: "Momentos que merecem o melhor",
