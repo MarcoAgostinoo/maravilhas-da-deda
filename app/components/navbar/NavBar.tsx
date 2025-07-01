@@ -88,7 +88,7 @@ export function NavBar() {
 
       <Navbar
         fluid
-        className={`fixed z-50 h-20 w-full transition-all duration-300 ${isScrolled ? "top-0 bg-white/90 text-black shadow-lg backdrop-blur-sm dark:bg-gray-900/95 dark:shadow-gray-800/20" : "top-0 bg-transparent md:top-10 dark:bg-transparent"}`}
+        className={`fixed z-50 h-23 w-full transition-all duration-300 ${isScrolled ? "top-0 bg-white/60 text-black shadow-lg backdrop-blur-sm dark:bg-gray-900/95 dark:shadow-gray-800/20" : "top-0 bg-transparent md:top-10 dark:bg-transparent"}`}
       >
         <div className="container mx-auto flex flex-wrap md:flex-nowrap items-center justify-between px-0 py-0 md:flex-row md:gap-4">
           {/* Linha principal em md+ */}

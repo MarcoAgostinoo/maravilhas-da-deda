@@ -63,7 +63,7 @@ export default function HeroSobre() {
               <div className="animate-on-scroll fade-in-up group relative mt-8 inline-flex delay-600 sm:mt-10">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37] via-[#d8c0c0] to-[#4A2C2A] opacity-70 blur-lg filter transition-all duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
                 <a
-                  href="/contato"
+                  href="/p/contato"
                   className="relative inline-flex items-center justify-center border border-transparent bg-[#4A2C2A] px-4 py-2.5 text-sm font-bold text-white transition-all duration-200 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-[#4A2C2A] focus:ring-offset-2 sm:px-6 sm:py-3 sm:text-base dark:bg-[#4A2C2A] dark:hover:bg-opacity-90 shadow-lg"
                 >
                   Fale com a Dedá

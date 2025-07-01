@@ -62,7 +62,7 @@ export default function Home() {
               </>
             ),
             callToActionText: "Ver Bolos de Casamento",
-            callToActionLink: "/portfolio/casamentos",
+            callToActionLink: "/p/servicos",
           },
           {
             icon: (
@@ -84,7 +84,7 @@ export default function Home() {
               </>
             ),
             callToActionText: "Ver Festas e Aniversários",
-            callToActionLink: "/portfolio/aniversarios",
+            callToActionLink: "/p/servicos",
           },
           {
             icon: (
@@ -106,14 +106,14 @@ export default function Home() {
               </>
             ),
             callToActionText: "Ver Eventos Corporativos",
-            callToActionLink: "/portfolio/eventos",
+            callToActionLink: "/p/servicos",
           },
         ]}
         showGlobalCTA={true}
         globalCTATitle="Vamos transformar sua celebração em uma doce lembrança?"
         globalCTADescription="Com atendimento próximo, ingredientes nobres e design exclusivo, a Maravilhas da Dedá faz da sua comemoração uma experiência inesquecível."
         globalCTAText="Fale com a Dedá"
-        globalCTALink="/contato"
+        globalCTALink="/p/contato"
       />
       <AccordionFaq />
     </main>

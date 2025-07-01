@@ -45,14 +45,14 @@ export function FooTer() {
               <FaWhatsapp className="h-5 w-5" />
             </a>
             <a
-              href="https://www.facebook.com/maravilhasdadeda"
+              href="https://www.facebook.com/andreia.aparecida.371517"
               className="text-white transition-colors hover:text-pink-300 dark:hover:text-pink-400"
               aria-label="Facebook"
             >
               <FaFacebookF className="h-5 w-5" />
             </a>
             <a
-              href="https://www.instagram.com/maravilhasdadeda"
+              href="https://www.instagram.com/maravilhas_da_deda/"
               className="text-white transition-colors hover:text-pink-300 dark:hover:text-pink-400"
               aria-label="Instagram"
             >

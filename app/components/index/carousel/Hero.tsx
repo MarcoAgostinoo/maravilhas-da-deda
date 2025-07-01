@@ -41,7 +41,7 @@ const slides = [
     buttons: [
       {
         text: "Ver portfólio",
-        href: "/#portfolio",
+        href: "/p/portifolio",
         className:
           "flex items-center justify-center bg-yellow-400 px-5 py-2.5 text-sm font-medium text-gray-900 shadow-lg hover:bg-yellow-500 hover:shadow-yellow-400/30 focus:ring-4 focus:ring-yellow-300 focus:outline-none",
       },
@@ -58,7 +58,7 @@ const slides = [
     buttons: [
       {
         text: "Saiba mais",
-        href: "/#sobre",
+        href: "/p/servicos",
         className:
           "flex items-center justify-center border border-yellow-400 px-5 py-2.5 text-sm font-medium text-yellow-400 shadow-lg hover:bg-yellow-400 hover:text-white hover:shadow-yellow-400/30 focus:ring-4 focus:ring-yellow-300 focus:outline-none",
       },

@@ -298,7 +298,7 @@ const ContactPage = () => {
                 <FaTwitter className="h-8 w-8" />
               </motion.a> */}
               <motion.a
-                href="https://instagram.com/suaempresa"
+                href="https://www.instagram.com/maravilhas_da_deda/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, color: "#E1306C" }}

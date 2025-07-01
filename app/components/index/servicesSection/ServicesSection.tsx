@@ -9,21 +9,21 @@ const services = [
     img2: "/ServicesSection/services2.jpeg", // Ex: Foto de um bolo de casamento elegante
     title: "Casamentos Inesquecíveis",
     desc: "O bolo de casamento é o símbolo da celebração do amor. Criamos designs que harmonizam com o estilo da sua festa, do clássico ao contemporâneo, e mesas de doces finos para encantar seus convidados.",
-    link: "/servicos/casamentos",
+    link: "/p/servicos",
   },
   {
     img: "/ServicesSection/services3.jpeg", // Ex: Close-up de um cupcake temático
     img2: "/ServicesSection/services4.jpeg", // Ex: Foto de um bolo de aniversário vibrante
     title: "Festas e Aniversários",
     desc: "Seja um aniversário infantil com o personagem favorito do seu filho ou uma celebração cheia de estilo, nós damos vida ao seu tema. Nossos bolos decorados, cupcakes e doces personalizados completam a festa.",
-    link: "/servicos/festas-e-aniversarios",
+    link: "/p/servicos",
   },
   {
     img: "/ServicesSection/services5.jpg", // Ex: Close-up de um doce com logo
     img2: "/ServicesSection/services6.jpg", // Ex: Foto de um kit elegante de doces corporativos
     title: "Eventos Corporativos",
     desc: "Surpreenda clientes e parceiros com um toque de sofisticação. Oferecemos kits de doces, bolos com o logo da sua empresa e lembranças personalizadas que fortalecem a imagem da sua marca.",
-    link: "/servicos/corporativo",
+    link: "/p/servicos",
   },
 ];
 
